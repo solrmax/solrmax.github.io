@@ -3,4 +3,4 @@ plugins:
 - jekyll-remote-theme
 title: Esteban's Fifth Corner
 description: Portoflio and personal blog about programming, video games and other herbs!
-#google_analytics: 
+google_analytics: G-M7HRV5WG9L
