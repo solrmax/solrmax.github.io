@@ -1,0 +1,225 @@
+/* ------------------------------
+   PROJECT ROW (outer container)
+   ------------------------------ */
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 60px 0;
+
+  /* Hover animation */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Hover: gentle lift + scale */
+.project-row:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+
+/* -----------------------------------------
+   INNER WRAPPER (handles fade-in animation)
+   ----------------------------------------- */
+
+.project-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  width: 100%;
+}
+
+.project-inner.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Base card */
+.project-inner {
+  border: 1px solid rgba(0, 255, 0, 0.35);
+  border-radius: 6px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Terminal glow hover effect */
+.project-inner:hover {
+  position: relative;
+  transform: translateY(-4px);
+
+  /* Stronger glow on hover */
+  box-shadow:
+    0 0 8px rgba(0, 255, 0, 0.45),
+    0 0 16px rgba(0, 255, 0, 0.25),
+    0 0 24px rgba(0, 255, 0, 0.12);
+
+  border-color: #00ff00;
+}
+
+.project-inner:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 0, 0.05) 0px,
+    rgba(0, 255, 0, 0.05) 1px,
+    transparent 2px
+  );
+}
+
+/* -----------------------
+   LEFT/RIGHT ALTERNATION
+   ----------------------- */
+
+.project-row.reverse .project-inner {
+  flex-direction: row-reverse;
+}
+
+
+/* ---------------
+   IMAGE + LINK
+   --------------- */
+
+.project-row a {
+  display: block;
+  width: 50%;
+  text-decoration: none;
+}
+
+.project-row img {
+  width: 100%;
+  display: block;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* ---------------
+   TEXT CONTENT
+   --------------- */
+
+.project-text {
+  flex: 1;
+}
+
+.project-text p {
+  text-align: justify;
+}
+
+
+/* ----------------
+   RESPONSIVE RULES
+   ---------------- */
+
+@media (max-width: 800px) {
+  .project-inner,
+  .project-row.reverse .project-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-row a {
+    width: 100%;
+  }
+
+  .project-row img {
+    max-width: none;
+    width: 100%;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+}
+
+/* -------------------------
+   PLATFORM ICON BADGES
+   ------------------------- */
+
+.platform-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 10px;
+}
+
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  background: transparent;
+  color: #f8f8f2; /* light text, readable */
+  font-size: 0.8rem;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+
+.platform-badge img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: brightness(1.2); /* looks sharper on dark background */
+}
+
+/* Meta info row (tags + release date) */
+.project-meta {
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.7);
+  margin: 4px 0 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  align-items: center;
+}
+
+.project-tag {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+/* Title row: title on left, release on right */
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.project-title-row h3 {
+  margin: 0;
+}
+
+.project-title-release {
+  color: #00ff00;          /* Hacker green */
+  opacity: 0.9;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
