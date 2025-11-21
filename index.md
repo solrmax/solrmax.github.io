@@ -3,9 +3,6 @@ layout: default
 title: Home
 ---
 
-<link rel="stylesheet" href="/assets/css/projects.css">
-<script src="/assets/js/projects.js"></script>
-
 ## Published Games
 
 {% for p in site.data.projects %}

@@ -5,43 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <script src="/assets/js/projects.js"></script>
     {% include head-custom.html %}
-
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
 
     <header>
       <div class="container intro-section">
-
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1 class="intro-title">{{ site.title }}</h1>
         </a>
-
         <h2 class="intro-subtitle">
           {{ site.author | default: "Your Name" }} — Senior Unity Game Developer
         </h2>
-
         <p class="intro-bio">
-          Crafting gameplay, tools, and game systems for 10+ years.  
-          Focused on performance, polish, and building great player experiences.
+          Crafting gameplay, tools, and game systems for 10+ years.
         </p>
-
         <div class="intro-links">
-          <a href="https://docs.google.com/document/d/17ror9scPDFVUMK6okj4Yf7gdI_MyANjwWboukXwG8pc/edit?usp=sharing" target="_blank" class="intro-icon cv">
-            <img src="/assets/icons/socials/s_cv.svg">
+          {% for social in site.socials %}
+            <a href="{{ social.url }}" target="_blank" class="intro-icon {{ social.name }}">
+            <img src="/assets/icons/socials/s_{{ social.name }}.svg">
           </a>
-          <a href="https://www.linkedin.com/in/estebangaeteflores" target="_blank" class="intro-icon linkedin">
-            <img src="/assets/icons/socials/s_linkedin.svg">
-          </a>
-          <a href="https://github.com/Theby" target="_blank" class="intro-icon github">
-            <img src="/assets/icons/socials/s_github.svg">
-          </a>
+          {% endfor %}
         </div>
-
       </div>
-
     </header>
 
     <div class="container page-content">
@@ -49,5 +39,6 @@
         {{ content }}
       </section>
     </div>
+    
   </body>
 </html>

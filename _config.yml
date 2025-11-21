@@ -5,4 +5,13 @@ title: Esteban's Fifth Corner
 description: Portfolio and personal blog about programming, video games and design!
 google_analytics: G-M7HRV5WG9L
 show_downloads: false
+
+# Profile
 author: Esteban Gaete Flores
+socials:
+  - name: cv
+    url: https://docs.google.com/document/d/17ror9scPDFVUMK6okj4Yf7gdI_MyANjwWboukXwG8pc/edit?usp=sharing
+  - name: linkedin
+    url: https://www.linkedin.com/in/estebangaeteflores
+  - name: github
+    url: https://github.com/Theby
