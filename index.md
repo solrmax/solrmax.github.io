@@ -6,7 +6,8 @@ title: Home
 # Published Games
 
 {% for p in site.data.projects %}
-<div class="project-row {% if p.reverse %}reverse{% endif %}">
+{% assign indexMod = forloop.index0 | modulo: 2 %}
+<div class="project-row {% if indexMod == 1 %}reverse{% endif %}">
   <div class="project-inner">
     <a class="project-image-link" href="{{ p.url }}" target="_blank">
       <img src="{{ p.image }}" alt="{{ p.title }}">
