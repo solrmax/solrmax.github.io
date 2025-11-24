@@ -352,12 +352,14 @@
   opacity: 0.9;
   display: inline-block;       /* required for transform to work */
   transition: opacity 0.2s ease, transform 0.2s ease;
+  will-change: transform;   /* smoother GPU-accelerated lift */
 }
 
 .footer-text .footer-link:hover {
   opacity: 1;
   transform: translateY(-2px); /* subtle lift on hover */
   text-decoration: none;    /* keep clean even on hover */
+  filter: brightness(1.1);
 }
 
 
