@@ -162,6 +162,7 @@
 ------------------------------------------ */
 .project-text {
   flex: 1;
+  align-self: flex-start;
 }
 
 .project-text p {
