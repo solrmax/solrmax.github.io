@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## Published Games
+# Published Games
 
 {% for p in site.data.projects %}
 <div class="project-row {% if p.reverse %}reverse{% endif %}">
