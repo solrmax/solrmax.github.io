@@ -17,6 +17,7 @@
   --black-alpha-70: rgba(0, 0, 0, 0.7);
 
   --text-light: #f8f8f2;
+  --text-muted: #b4b4b4;
 }
 
 /*
@@ -169,6 +170,22 @@
   text-align: justify;
 }
 
+.project-game-description {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--text-muted);
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.project-description {
+  margin-bottom: 12px;
+}
+
+
 /* ------------------------------------------
    RESPONSIVE RULES
 ------------------------------------------ */
@@ -243,7 +260,12 @@
 /* ------------------------------------------
    META INFO
 ------------------------------------------ */
-.project-meta {
+
+.project-tags {
+  margin: 0px 0 6px 0;
+}
+
+.project-badges {
   font-size: 0.85rem;
   color: var(--black-alpha-70);
   margin: 4px 0 12px 0;

@@ -19,15 +19,20 @@ title: Home
           <span class="project-title-release">{{ p.release }}</span>
         {% endif %}
       </div>
-      <div class="project-meta">
+      <div class="project-tags">
         {% if p.tags %}
           {% for tag in p.tags %}
             <span class="project-tag">{{ tag }}</span>
           {% endfor %}
         {% endif %}
       </div>
-      <p>{{ p.description }}</p>
-      <div class="project-meta">
+      {% if p.game_description %}
+        <p class="project-game-description">{{ p.game_description }}</p>
+      {% endif %}
+      {% if p.description %}
+        <p class="project-description">{{ p.description }}</p>
+      {% endif %}
+      <div class="project-badges">
         {% if p.platforms %}
           <div class="platform-badges">
             {% for plat in p.platforms %}
