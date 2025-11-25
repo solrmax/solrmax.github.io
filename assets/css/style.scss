@@ -1,17 +1,4 @@
 ---
 ---
 
-$conifer: #b5e853;
-$footer: $conifer;
-
 @import "{{ site.theme }}";
-
-.container {
-  max-width: 1200px;
-}
-
-footer {
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-top: 1px dashed $conifer;
-}

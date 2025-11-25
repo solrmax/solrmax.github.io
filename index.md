@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+pageType: projects
 ---
 
 # Published Games
