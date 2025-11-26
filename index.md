@@ -27,8 +27,8 @@ pageType: projects
           {% endfor %}
         {% endif %}
       </div>
-      {% if p.game_description %}
-        <p class="project-game-description">{{ p.game_description }}</p>
+      {% if p.project_description %}
+        <p class="project-game-description">{{ p.project_description }}</p>
       {% endif %}
       {% if p.description %}
         <p class="project-description">{{ p.description }}</p>
@@ -37,6 +37,52 @@ pageType: projects
         {% if p.platforms %}
           <div class="platform-badges">
             {% for plat in p.platforms %}
+              <a class="platform-badge" href="{{ plat.url }}" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/platforms/{{ plat.id }}.svg" alt="{{ plat.id }} icon">
+                {{ site.data.platforms[plat.id].name }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+# Communities
+
+{% for c in site.data.projects-communities %}
+{% assign indexMod = forloop.index0 | modulo: 2 %}
+<div class="project-row {% if indexMod == 1 %}reverse{% endif %}">
+  <div class="project-inner">
+    <a class="project-image-link" href="{{ c.url }}" target="_blank">
+      <img src="{{ c.image }}" alt="{{ c.title }}">
+    </a>
+    <div class="project-text">
+      <div class="project-title-row">
+        <h2>{{ c.title }}</h2>
+        {% if c.release %}
+          <span class="project-title-release">{{ c.release }}</span>
+        {% endif %}
+      </div>
+      <div class="project-tags">
+        {% if c.tags %}
+          {% for tag in c.tags %}
+            <span class="project-tag">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+      {% if c.project_description %}
+        <p class="project-game-description">{{ c.project_description }}</p>
+      {% endif %}
+      {% if c.description %}
+        <p class="project-description">{{ c.description }}</p>
+      {% endif %}
+      <div class="project-badges">
+        {% if c.platforms %}
+          <div class="platform-badges">
+            {% for plat in c.platforms %}
               <a class="platform-badge" href="{{ plat.url }}" target="_blank" rel="noopener noreferrer">
                 <img src="assets/icons/platforms/{{ plat.id }}.svg" alt="{{ plat.id }} icon">
                 {{ site.data.platforms[plat.id].name }}

@@ -1,3 +1,13 @@
-# Communities
-
-GameDev Planet
+- title: GameDev Planet
+  project_description: Non-profit organization and the largest Chilean game developer community.
+  description: Organized over 80 monthly community events featuring 200+ speakers and 250+ game demos, consistently drawing around 150 attendees per session. Helped strengthen the local ecosystem by facilitating networking, collaboration, and knowledge-sharing between developers, studios, students, and industry professionals.
+  image: assets/images/p_gamedevplanet.gif
+  url: https://gamedevplanet.net
+  release: Since Mar 2015
+  platforms:
+    - id: instagram
+      url: https://www.instagram.com/gamedevplanet
+    - id: youtube
+      url: https://www.youtube.com/@gamedevplanet
+    - id: linkedin
+      url: https://www.linkedin.com/company/gamedev-planet
