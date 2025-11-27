@@ -1,5 +1,5 @@
 - title: Loop Boxes
-  project_description: To do later
+  project_description: You are trapped between three levels that keep repeating, actions in the past are permanent. Plan ahead or get stuck!
   description: 2D Sokoban-style puzzle game. Developed for the GMTK Game Jam 2025 as a solo developer. Done with Unity 6 and C#. Art assets are free resources slightly edited for the game, on the other hand, the level design, sound effects, music and code is done by me.
   image: assets/images/p_loopboxes.gif
   url: https://tebifestival.itch.io/loop-boxes

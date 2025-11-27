@@ -12,3 +12,9 @@ android:
   name: Android
 itchio:
   name: Itch.io
+instagram:
+  name: Instagram
+youtube:
+  name: YouTube
+linkedin:
+  name: LinkedIn
