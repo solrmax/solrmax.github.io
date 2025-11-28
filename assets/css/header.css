@@ -52,3 +52,25 @@
   filter: brightness(0) invert(1) drop-shadow(0 0 6px var(--green));
   transform: translateY(-2px);
 }
+
+/* Highlight CV icon with shimmering glow */
+.intro-icon.cv img {
+  animation: cvShimmer 2.4s ease-in-out infinite;
+}
+
+/* Shimmer animation */
+@keyframes cvShimmer {
+  0% {
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px var(--green-alpha-25));
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px var(--green));
+    transform: translateY(-1px) rotate(1deg);
+  }
+  100% {
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px var(--green-alpha-25));
+    transform: translateY(0) rotate(0deg);
+  }
+}
+  
