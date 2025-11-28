@@ -174,7 +174,7 @@
     - id: gamejolt
       url: https://gamejolt.com/games/king-k-a-goblin-defense-game/82821
 
-- title: The Legend of Zelda Remade
+- title: Zelda Remade
   project_description: Explore a classic game with a fresh visual style. Only exploration is available in this demo.
   description: A personal fan remake built with BennuGD, where I implemented core exploration systems, map logic, and engine adaptations to recreate the feel of classic Zelda with SNES-style visuals. Focused on clean architecture and faithful gameplay flow.
   image: assets/images/p_zelda.gif
