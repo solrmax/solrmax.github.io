@@ -32,7 +32,6 @@
   margin-top: 60px;
 }
 
-
 /* ------------------------------------------
    Container
 ------------------------------------------ */
@@ -162,14 +161,48 @@
 /* ------------------------------------------
    RESPONSIVE RULES
 ------------------------------------------ */
+
+@media (max-width: 1000px) {
+  .project-title-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .project-title-row h2 {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 800px) {
+  .project-title-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .project-title-row h2,
+  .project-title-row .project-release {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .project-title-row h2 {
+    margin-bottom: 0;
+  }
+
+  .project-text {
+    width: 100%;
+    text-align: center;
+  }
+
   .project-inner,
   .project-row.reverse .project-inner {
     flex-direction: column;
     text-align: center;
   }
 
-  .project-row a {
+  .project-row .project-image-link {
     width: 100%;
   }
 
@@ -177,11 +210,8 @@
     width: 100%;
     max-width: none;
   }
-
-  .project-text {
-    width: 100%;
-  }
 }
+
 
 /* ------------------------------------------
    PLATFORM BADGES
@@ -362,11 +392,22 @@
   );
 }
 
-.smaller-project-card .project-release {
+.smaller-project-image-link {
   display: block;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
   text-align: center;
-  margin: 4px 0 8px;
-  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smaller-project-image-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .smaller-project-card h2 {
@@ -376,12 +417,11 @@
   margin-right: auto;
 }
 
-.smaller-project-image-link {
+.smaller-project-card .project-release {
   display: block;
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  text-decoration: none;
+  text-align: center;
+  margin: 4px 0 8px;
+  white-space: nowrap;
 }
 
 .smaller-project-card .project-tags {

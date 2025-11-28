@@ -1,6 +1,6 @@
 - title: Loop Boxes
-  project_description: Three looping stages. Actions in the past are permanent. Plan ahead or get stuck!
-  description: Solo-developed during GMTK 2025 using Unity 6. I built all core systems, level design, SFX, and music, and adapted free art assets to fit the game. Focused on rapid prototyping, puzzle iteration, and polish under a tight deadline.
+  project_description: Three looping stages. Your past actions stay forever, so plan carefully!
+  description: Solo developed during GMTK 2025 using Unity 6. I built all core systems, level design, SFX, and music, and adapted free art assets to fit the game. Focused on rapid prototyping, puzzle iteration, and polish under a tight deadline.
   image: assets/images/p_loopboxes.gif
   url: https://tebifestival.itch.io/loop-boxes
   release: Aug 2025
@@ -10,7 +10,7 @@
       url: https://tebifestival.itch.io/loop-boxes
 
 - title: Amor a Primera Vista
-  project_description: You just said yes to everthing in a dating App. Now you are dating an Angel?!
+  project_description: You said yes to all on a dating app. Now you are dating an actual Angel!
   description: Developed for Global Game Jam 2024 with a small team. I led all Unity implementation, defining scene architecture, dialogue flow, and system scripting. Ensured smooth narrative delivery, efficient asset integration, and polished UI under tight deadlines.
   image: assets/images/p_firstsightlove.gif
   url: https://globalgamejam.org/games/2024/amor-primera-vista-love-first-sight-7
@@ -21,7 +21,7 @@
       url: https://globalgamejam.org/games/2024/amor-primera-vista-love-first-sight-7
 
 - title: Mariana Strange
-  project_description: Your brother is missing. Search for him in the depths of the ocean.
+  project_description: Your brother is missing. Search for him in the dark depths of the ocean.
   description: Created for Game Jam +- Santiago, where I served as Lead Programmer. I defined the project’s technical architecture, implemented core systems, and ensured smooth integration of gameplay, narrative, and art under a rapid production cycle.
   image: assets/images/p_marianastrange.gif
   url: https://gamejolt.com/games/MarianaStrange/430773
@@ -32,7 +32,7 @@
       url: https://gamejolt.com/games/MarianaStrange/430773
 
 - title: FOR THEM
-  project_description: Feed and protect your cubs from the dangers of the forest. They depend on you.
+  project_description: Feed and protect your cubs from forest dangers. They depend on you!
   description: As Lead Programmer for FOR THEM (Global Game Jam 2019), I architected the core survival/adventure systems, managed asset integration, and implemented gameplay logic. I ensured stability, performance, and a cohesive experience during the tight jam schedule.
   image: assets/images/p_forthem.gif
   url: https://v3.globalgamejam.org/2019/games/them
@@ -55,7 +55,7 @@
       url: https://apps.apple.com/us/app/agente-oso/id1434320450
 
 - title: Byted Noise
-  project_description: It's a zombie apocalypse! Use your radio to find survivors on the streets.
+  project_description: A zombie apocalypse! Use your radio to find survivors in the streets.
   description: Built as Lead Programmer during Global Game Jam 2018. I defined the project architecture, coded survival and open-world systems, integrated user interactions and audio/visual assets, and delivered a stable arcade-style zombie-apocalypse prototype.
   image: assets/images/p_bytednoise.gif
   url: https://v3.globalgamejam.org/2018/games/byted-noise
@@ -90,7 +90,7 @@
       url: https://play.google.com/store/apps/details?id=com.tapsense.sketchrally
 
 - title: Caiam Piter (CPMK)
-  project_description: Your mother fungus needs you to explore the world and find the virgin lands.
+  project_description: Your mother fungus sends you to explore the world and find virgin lands.
   description: >
     As Director, Lead Programmer, and Designer of Caiam Piter and the Mushroom Kingdom,
     I oversaw full development for PC and Switch, defined core systems and design vision,
@@ -118,7 +118,7 @@
       url: https://father.io
 
 - title: Empathy
-  project_description: People in the mental hospital need a helping hand to find happiness.
+  project_description: People in the hospital need a hand to find happiness. Help them through.
   description: Created during Global Game Jam 2017. As Lead Programmer, I defined the core systems, implemented first-person puzzle mechanics, and coordinated asset and narrative integration to deliver a cohesive and polished prototype under tight constraints.
   image: assets/images/p_empathy.gif
   url: https://v3.globalgamejam.org/2017/games/empathy-game-about-depression
@@ -129,7 +129,7 @@
       url: https://v3.globalgamejam.org/2017/games/empathy-game-about-depression
 
 - title: New Flame
-  project_description: You lost the flame and broke the ritual. Bring it back to the hill and end the curse!
+  project_description: You broke the ritual. Bring the flame back to the hill and end the curse!
   description: Created during Global Game Jam 2016. As Lead Programmer and Game Designer, I defined the core platforming systems, built interaction and traversal mechanics, and guided overall gameplay flow while coordinating asset integration under tight constraints.
   image: assets/images/p_newflame.gif
   url: https://v3.globalgamejam.org/2016/games/new-flame
@@ -140,7 +140,7 @@
       url: https://v3.globalgamejam.org/2016/games/new-flame
 
 - title: Descend Into Heaven
-  project_description: Descend in search of what was taken from you. Do not let them stop you!
+  project_description: Descend to recover what was taken from you. Do not let them stop you!
   description: As Project Manager and Lead Programmer, I directed development, defined the technical architecture, and implemented core platforming and combat systems. I coordinated design, art, and code workflows to deliver a cohesive action-adventure experience.
   image: assets/images/p_descendintoheaven.gif
   url: https://spoonmangames.itch.io/descendintoheaven
@@ -175,7 +175,7 @@
       url: https://gamejolt.com/games/king-k-a-goblin-defense-game/82821
 
 - title: Zelda Remade
-  project_description: Explore a classic game with a fresh visual style. Only exploration is available in this demo.
+  project_description: Explore a classic adventure with a new look in this exploration-only demo.
   description: A personal fan remake built with BennuGD, where I implemented core exploration systems, map logic, and engine adaptations to recreate the feel of classic Zelda with SNES-style visuals. Focused on clean architecture and faithful gameplay flow.
   image: assets/images/p_zelda.gif
   release: Jul 2011
@@ -186,7 +186,7 @@
       url: https://github.com/SpoonmanGames/ZeldaRemade
 
 - title: Bomber-Chan
-  project_description: The same explosive gameplay as always. Tech demo showcasing BennuGD capabilities.
+  project_description: Classic explosive fun! A BennuGD tech demo showing expanded capabilities.
   description: A BennuGD tech-demo where I recreated Super Bomberman 5 Gold mechanics, implementing grid-based logic, bomb and multiplayer, expanded controller support, and custom tournament features to push the engine’s capabilities.
   image: assets/images/p_bomberchan.gif
   url: https://github.com/SpoonmanGames/BomberChan
