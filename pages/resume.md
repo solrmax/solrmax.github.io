@@ -39,11 +39,16 @@ permalink: /resume
 .pdf-wrapper object {
   width: 100%;
 }
+
+.btn-download .icon {
+  opacity: 0.6;
+  background: url("../images/freya.jpg") 0 0 no-repeat;
+}
 </style>
 
 # Resume
 
-<a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Esteban%20Gaete%20Flores%20-%20Senior%20Unity%20Developer.pdf" class="btn" download><span class="icon"></span>Download PDF</a>
+<a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Esteban%20Gaete%20Flores%20-%20Senior%20Unity%20Developer.pdf" class="btn btn-download" download><span class="icon"></span>Download PDF</a>
 
 <div class="pdf-wrapper">
 	<object
