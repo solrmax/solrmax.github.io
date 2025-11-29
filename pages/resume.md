@@ -42,8 +42,9 @@ permalink: /resume
 
 .btn-download .icon {
   opacity: 0.6;
-  background: url("../images/freya.jpg") 0 0 no-repeat;
+  background: url("{{ site.url }}{{ site.baseurl }}/assets/images/freya.jpg") no-repeat 0 0;
 }
+
 </style>
 
 # Resume
