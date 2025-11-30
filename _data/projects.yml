@@ -1,6 +1,11 @@
 - title: The Eightfold Path
-  project_description: A serene open-world puzzle adventure where you explore a vibrant astral realm and solve challenges inspired by Eastern philosophy.
-  description: Improved Switch/PC performance by 50%+ via profiling and optimization. Built tools that auto-ported 100% of Construct 3 content into Unity, reducing setup time by ~80%. Implemented streaming for seamless world traversal. 
+  project_description: >
+    A serene open-world puzzle adventure where you explore a vibrant astral
+    realm and solve challenges inspired by Eastern philosophy.
+  description: >
+    Improved Switch/PC performance by 50%+ via profiling and optimization. Built
+    tools that auto-ported 100% of Construct 3 content into Unity, reducing setup
+    time by ~80%. Implemented streaming for seamless world traversal.
   image: assets/images/p_eightfoldpath.gif
   url: https://store.steampowered.com/app/1736620/The_Eightfold_Path
   release: Friendly Llama - Aug 2024
@@ -14,8 +19,13 @@
       url: https://www.nintendo.com/us/store/products/the-eightfold-path-switch
 
 - title: NBA Clash
-  project_description: A fast-paced, real-time 3v3 mobile basketball game where you build a squad of NBA stars, swipe and tap to score, and aim to be the first to 11 points.
-  description: Integrated SDKs and analytics to cut build time from 7 days to 2. Debugged multiplayer systems to improve match stability and sync. Coordinated cross-team workflows between Chile and US engineering groups.
+  project_description: >
+    A fast-paced, real-time 3v3 mobile basketball game where you build a squad
+    of NBA stars, swipe and tap to score, and aim to be the first to 11 points.
+  description: >
+    Integrated SDKs and analytics to cut build time from 7 days to 2. Debugged
+    multiplayer systems to improve match stability and sync. Coordinated
+    cross-team workflows between Chile and US engineering groups.
   image: assets/images/p_nbaclash.gif
   url: https://www.youtube.com/watch?v=eKohkv9YPKY
   release: Globant -Nov 2022
@@ -27,8 +37,13 @@
       url: https://play.google.com/store/apps/details?id=com.niftygames.nbaclash
 
 - title: Linked Mask
-  project_description: A hand-crafted 2D action-adventure where you battle enemies, explore mystical landscapes, and collect powerful masks to reach the final challenge.
-  description: Led full development from concept to release. Built core gameplay, combat, and platforming systems in Unity. Created custom editor tools and a reusable framework, and coordinated a 6–12 person team across disciplines.
+  project_description: >
+    A hand-crafted 2D action-adventure where you battle enemies, explore
+    mystical landscapes, and collect powerful masks to reach the final challenge.
+  description: >
+    Led full development from concept to release. Built core gameplay, combat,
+    and platforming systems in Unity. Created custom editor tools and a reusable
+    framework, and coordinated a 6–12 person team across disciplines.
   image: assets/images/p_linkedmask.gif
   url: https://store.steampowered.com/app/1111590/Linked_Mask/
   release: Spoonman Games - Sep 2022
@@ -38,8 +53,13 @@
       url: https://store.steampowered.com/app/1111590/Linked_Mask/
 
 - title: What Lies in the Multiverse
-  project_description: A dimension-shifting puzzle-platformer mixing comedy and chaos as you hop between parallel worlds to solve challenges and unravel a cosmic mystery.
-  description: Ported the full game from GameMaker 1 to GameMaker 2, upgrading core systems for stability, larger levels, and multi-platform support. Enhanced scripting and cinematic tools, cutting implementation time by ~50%.
+  project_description: >
+    A dimension-shifting puzzle-platformer mixing comedy and chaos as you hop
+    between parallel worlds to solve challenges and unravel a cosmic mystery.
+  description: >
+    Ported the full game from GameMaker 1 to GameMaker 2, upgrading core systems
+    for stability, larger levels, and multi-platform support. Enhanced scripting
+    and cinematic tools, cutting implementation time by ~50%.
   image: assets/images/p_multiverse.gif
   url: https://store.steampowered.com/app/1721170/What_Lies_in_the_Multiverse/
   release: IguanaBee - Mar 2022
@@ -48,15 +68,20 @@
     - id: steam
       url: https://store.steampowered.com/app/1721170/What_Lies_in_the_Multiverse/
     - id: playstation
-      url: https://store.playstation.com/es-cl/concept/10003943
+      url: httpsstore.playstation.com/es-cl/concept/10003943
     - id: xbox
       url: https://www.xbox.com/es-cl/games/store/what-lies-in-the-multiverse/9pn0r2dgzkmr
     - id: switch
       url: https://www.nintendo.com/us/store/products/what-lies-in-the-multiverse-switch
 
 - title: Garden Joy
-  project_description: A relaxing garden-design mobile game where you craft layouts, decorate outdoor spaces, and grow your dream virtual garden.
-  description: Delivered 25+ live updates for a 1M+ install mobile title. Integrated new content, backend data, and UI features while maintaining strong performance. Supported a 20+ person team and a 4.8/5 App Store rating.
+  project_description: >
+    A relaxing garden-design mobile game where you craft layouts, decorate
+    outdoor spaces, and grow your dream virtual garden.
+  description: >
+    Delivered 25+ live updates for a 1M+ install mobile title. Integrated new
+    content, backend data, and UI features while maintaining strong performance.
+    Supported a 20+ person team and a 4.8/5 App Store rating.
   image: assets/images/p_gardenjoy.gif
   url: https://www.gardenjoygame.com
   release: Burlingames Studios - Jan 2022
