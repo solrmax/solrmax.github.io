@@ -21,6 +21,7 @@
   release: Jun 2020
 
 - title: Top 10 Anime of the Decade
+  hidden: true
   description: >
     Friendly podcast discussion on our picks for the best anime series of the
     decade, including personal highlights and recommendations. Recorded for
@@ -30,6 +31,7 @@
   release: Dic 2019
 
 - title: Anime, Manga and Japan
+  hidden: true
   description: >
     Podcast conversation about anime, manga, and Japanese culture, sharing
     favorite series, influences, and experiences. Recorded for "Kaipi Checkpoint".

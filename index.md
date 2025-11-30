@@ -100,9 +100,9 @@ pageType: projects
 
 <div class="smaller-projects-grid">
   {% for item in site.data.projects-smaller-projects %}
-  {% if item.hidden %}
-    {% continue %}
-  {% endif %}
+    {% if item.hidden %}
+      {% continue %}
+    {% endif %}
     <div class="smaller-project-card">
         <a class="smaller-project-image-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
           <img src="{{ item.image }}" alt="{{ item.title }}">
@@ -144,6 +144,9 @@ pageType: projects
 
 <div class="talks-list">
   {% for item in site.data.projects-talks %}
+    {% if item.hidden %}
+      {% continue %}
+    {% endif %}
     <div class="talk-entry">
       <div class="talk-header">
         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
@@ -167,6 +170,9 @@ pageType: projects
 
 <div class="talks-list">
   {% for item in site.data.projects-papers %}
+    {% if item.hidden %}
+      {% continue %}
+    {% endif %}
     <div class="talk-entry">
       <div class="talk-header">
         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
