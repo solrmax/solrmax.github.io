@@ -56,12 +56,11 @@ permalink: /resume
 
 .back-wrapper {
   text-align: left;
-  margin-top: 10px;
-  margin-bottom: -10px; /* pulls title closer */
+  margin-bottom: -20px;
 }
 
 .back-link {
-  color: #7aff7a; /* Hacker theme green */
+  color: var(--green);
   text-decoration: none;
   font-size: 14px;
 }
