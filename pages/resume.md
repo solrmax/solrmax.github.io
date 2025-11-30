@@ -54,7 +54,27 @@ permalink: /resume
   margin-bottom: 20px;
 }
 
+.back-wrapper {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: -10px; /* pulls title closer */
+}
+
+.back-link {
+  color: #7aff7a; /* Hacker theme green */
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
 </style>
+
+<div class="back-wrapper">
+  <a href="/" class="back-link">← Back</a>
+</div>
 
 # Resume
 
@@ -68,6 +88,7 @@ permalink: /resume
 	  width="1000"
 	  height="1000"
 	  type="application/pdf">
+		<p>Your browser can't display the PDF. Please Download instead.</p>
 	</object>
 </div>
 
