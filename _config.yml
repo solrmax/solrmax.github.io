@@ -1,15 +1,17 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-  - jekyll-remote-theme
-google_analytics: G-M7HRV5WG9L
-show_downloads: false
-
 # Site Data
 title: The Fifth Corner - Portfolio & Devlog
 description: All about my game development challenges, programming insights, and creative projects.
 image: /assets/images/default-preview-image.png
 url: https://theby.github.io
 baseurl: ""
+
+# Configuration
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-remote-theme
+google_analytics: G-M7HRV5WG9L
+show_downloads: false
+show_navigation: false
 
 # Profile
 author: 

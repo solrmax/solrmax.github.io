@@ -34,9 +34,11 @@
         </div>
       </div>
 
-      <div class="container">
-        {% include navigation.html %}
-      </div>
+      {% if site.show_navigation %}
+        <div class="container">
+          {% include navigation.html %}
+        </div>
+      {% endif %}
     </header>
 
     <div class="container page-content">
