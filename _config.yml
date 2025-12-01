@@ -11,7 +11,7 @@ plugins:
   - jekyll-remote-theme
 google_analytics: G-M7HRV5WG9L
 show_downloads: false
-show_navigation: false
+show_navigation: true
 
 # Profile
 author: 
@@ -26,3 +26,17 @@ socials:
     url: https://www.linkedin.com/in/estebangaeteflores
   - name: github
     url: https://github.com/Theby
+
+# Contact
+chat_platforms:
+    - name: X
+      url: https://x.com/TebiFestival
+      handler: TebiFestival
+    - name: bluesky
+      url: https://bsky.app/profile/tebisight.bsky.social
+      handler: tebisight.bsky.social
+    - name: linkedin
+      url: https://www.linkedin.com/in/estebangaeteflores/
+      handler: in/estebangaeteflores/
+    - name: discord
+      handler: tebifestival
