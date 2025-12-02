@@ -1,0 +1,174 @@
+ /* ===========================
+   Blog layout shell (2 columns)
+   =========================== */
+
+.blog-shell {
+  max-width: 1120px;
+  margin: 32px auto 40px;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
+  gap: 32px;
+}
+
+/* Right column: override container defaults inside blog shell */
+.blog-shell > .page-content {
+  /* neutralize default .container layout so grid controls the width */
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+/* Keep content width comfortable */
+.blog-shell #main_content {
+  max-width: 720px;
+}
+
+/* ===========================
+   Left column (sidebar)
+   =========================== */
+
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 16px;
+  min-height: calc(100vh - 72px); /* feels like a full-height column */
+}
+
+/* Condensed header inside sidebar */
+.blog-sidebar header {
+  margin-bottom: 24px;
+}
+
+/* Tighten the intro section inside the sidebar */
+.blog-sidebar .intro-section.container {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+/* Smaller title/subtitle for blog view */
+.blog-sidebar .intro-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.blog-sidebar .intro-subtitle {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.blog-sidebar .intro-bio {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Social icons row inside sidebar */
+.blog-sidebar .intro-links {
+  margin-top: 8px;
+}
+
+/* Navigation inside the sidebar header */
+.blog-sidebar .container .site-nav {
+  margin-top: 10px;
+}
+
+/* ===========================
+   Blog tools
+   =========================== */
+
+.blog-tools {
+  margin: 16px 0 0;
+  padding: 0 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blog-tool {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(181, 232, 83, 0.35);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--text-light, #e0e0e0);
+  background: rgba(0, 0, 0, 0.6);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.blog-tool:hover {
+  border-color: var(--green, #b5e853);
+  background: rgba(181, 232, 83, 0.06);
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+/* ===========================
+   Sidebar footer
+   =========================== */
+
+.blog-sidebar > footer {
+  margin-top: 24px;
+  padding-top: 16px;
+}
+
+.blog-sidebar .site-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-sidebar .footer-text {
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* ===========================
+   Responsive behavior
+   =========================== */
+
+@media (max-width: 900px) {
+  .blog-shell {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 20px;
+  }
+
+  .blog-sidebar {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-right: 0;
+    padding-bottom: 16px;
+    min-height: auto;
+  }
+
+  .blog-tools {
+    margin-top: 12px;
+  }
+
+  .blog-shell #main_content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-tool {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .blog-tools {
+    gap: 6px;
+  }
+}

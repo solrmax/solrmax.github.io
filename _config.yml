@@ -12,6 +12,14 @@ plugins:
 google_analytics: G-M7HRV5WG9L
 show_downloads: false
 show_navigation: true
+permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category: blog
 
 # Profile
 author: 
