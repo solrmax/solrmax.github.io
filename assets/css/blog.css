@@ -31,8 +31,8 @@
 .blog-sidebar {
   display: flex;
   flex-direction: column;
+  border-right: 1px dashed var(--green);
   justify-content: space-between;
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
   padding-right: 16px;
   min-height: calc(100vh - 72px); /* feels like a full-height column */
 }
@@ -40,6 +40,9 @@
 /* Condensed header inside sidebar */
 .blog-sidebar header {
   margin-bottom: 24px;
+  background: none;
+  border-bottom: none;
+  padding-top: 0;
 }
 
 /* Tighten the intro section inside the sidebar */
@@ -47,6 +50,7 @@
   padding-left: 0;
   padding-right: 0;
   margin: 0;
+  padding-top: 0;
 }
 
 /* Smaller title/subtitle for blog view */
@@ -73,7 +77,7 @@
 
 /* Navigation inside the sidebar header */
 .blog-sidebar .container .site-nav {
-  margin-top: 10px;
+  margin-top: -35px;
 }
 
 /* ===========================
@@ -122,6 +126,8 @@
 .blog-sidebar > footer {
   margin-top: 24px;
   padding-top: 16px;
+  background: none;
+  border-top: none;
 }
 
 .blog-sidebar .site-footer {
@@ -147,7 +153,7 @@
 
   .blog-sidebar {
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px dashed var(--green);
     padding-right: 0;
     padding-bottom: 16px;
     min-height: auto;
