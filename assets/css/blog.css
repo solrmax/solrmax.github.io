@@ -43,6 +43,7 @@
   background: none;
   border-bottom: none;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* Tighten the intro section inside the sidebar */
@@ -97,7 +98,7 @@
    =========================== */
 
 .blog-tools {
-  margin: 16px 0 0;
+  margin: 0;
   padding: 0 0 8px;
   display: flex;
   flex-direction: column;      /* vertical stack */
@@ -235,7 +236,7 @@
 .blog-sidebar > footer {
   text-align: center;
   margin-top: 24px;
-  padding-top: 16px;
+  padding-top: 0px;
   background: none;
   border-top: none;
 }
@@ -309,6 +310,7 @@
   padding-top: 12px;
   border-top: 1px dashed var(--green);
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 .blog-subscribe-title {
