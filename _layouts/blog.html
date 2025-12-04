@@ -47,15 +47,6 @@
           </header>
 
           <nav class="blog-tools">
-            <!-- RSS: stays a button, first item -->
-            <a
-              class="blog-tool blog-tool-rss"
-              href="{{ site.feed.path | default: '/blog/feed.xml' | relative_url }}"
-              target="_blank"
-            >
-              RSS Feed
-            </a>
-
             <!-- Categories dropdown -->
             <div class="blog-tool-group" data-dropdown="categories">
               <button
@@ -121,7 +112,6 @@
                   <p class="blog-dropdown-empty">No categories yet.</p>
                 {% endif %}
               </div>
-
             </div>
 
             <!-- Tags dropdown -->
@@ -233,63 +223,82 @@
             </div>
           </nav>
 
-          <section class="blog-subscribe">
-            <h2 class="blog-subscribe-title">Subscribe by email</h2>
-            <p class="blog-subscribe-text">
-              Get new devlogs and posts in your inbox. No spam, unsubscribe anytime.
-            </p>
-
-            <form
-              action="https://github.us4.list-manage.com/subscribe/post?u=3b3a1bc85650ad0bc7cad3f43&amp;id=451d0f9f10&amp;f_id=007ddbedf0"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              target="_blank"
-              novalidate
-              class="blog-subscribe-form validate"
-            >
-              <label for="mce-EMAIL" class="blog-subscribe-label">
-                Email address
-              </label>
-
-              <div class="blog-subscribe-row">
-                <input
-                  type="email"
-                  name="EMAIL"
-                  class="blog-subscribe-input required email"
-                  id="mce-EMAIL"
-                  placeholder="you@example.com"
-                  required
-                  value=""
+          <div class="blog-bottom">
+            <section class="blog-rss">
+              <h2 class="blog-rss-title">
+                <a
+                  href="{{ site.feed.path | default: '/blog/feed.xml' | relative_url }}"
+                  target="_blank"
+                  class="blog-rss-link"
                 >
-                <button
-                  type="submit"
-                  name="subscribe"
-                  id="mc-embedded-subscribe"
-                  class="blog-subscribe-button"
-                >
-                  Subscribe
-                </button>
-              </div>
+                  SUBSCRIBE BY RSS
+                  <img
+                    src="https://rss.com/blog/wp-content/uploads/2019/10/social_style_3_rss-512-1.png"
+                    alt="RSS icon"
+                    class="blog-rss-icon"
+                  >
+                </a>
+              </h2>
+            </section>
 
-              <!-- Response messages -->
-              <div id="mce-responses" class="blog-subscribe-responses">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
 
-              <!-- Honeypot field (Mailchimp anti-bot) -->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input
-                  type="text"
-                  name="b_3b3a1bc85650ad0bc7cad3f43_451d0f9f10"
-                  tabindex="-1"
-                  value=""
-                >
-              </div>
-            </form>
-          </section>
+            <section class="blog-subscribe">
+              <h2 class="blog-subscribe-title">Subscribe by email</h2>
+              <p class="blog-subscribe-text">
+                Get new devlogs and posts in your inbox. No spam, unsubscribe anytime.
+              </p>
 
+              <form
+                action="https://github.us4.list-manage.com/subscribe/post?u=3b3a1bc85650ad0bc7cad3f43&amp;id=451d0f9f10&amp;f_id=007ddbedf0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank"
+                novalidate
+                class="blog-subscribe-form validate"
+              >
+                <label for="mce-EMAIL" class="blog-subscribe-label">
+                  Email address
+                </label>
+
+                <div class="blog-subscribe-row">
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="blog-subscribe-input required email"
+                    id="mce-EMAIL"
+                    placeholder="you@example.com"
+                    required
+                    value=""
+                  >
+                  <button
+                    type="submit"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="blog-subscribe-button"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+
+                <!-- Response messages -->
+                <div id="mce-responses" class="blog-subscribe-responses">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+
+                <!-- Honeypot field (Mailchimp anti-bot) -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input
+                    type="text"
+                    name="b_3b3a1bc85650ad0bc7cad3f43_451d0f9f10"
+                    tabindex="-1"
+                    value=""
+                  >
+                </div>
+              </form>
+            </section>
+          </div>
         </div>
 
         <footer>

@@ -134,19 +134,32 @@
   text-decoration: underline;
 }
 
-/* RSS: keep as a button/pill */
-.blog-tool-rss {
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(181, 232, 83, 0.7);
-  background: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
+.blog-rss-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
 }
 
-/* Make sure RSS is a bit bolder */
-.blog-tool-rss {
-  font-weight: 600;
+.blog-rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--text-light, #e0e0e0);
 }
+
+.blog-rss-link:hover {
+  color: var(--green, #b5e853);
+  text-decoration: underline;
+}
+
+.blog-rss-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
 
 /* Toggle links (Categories / Tags / Archive) */
 .blog-tool-toggle {
@@ -253,6 +266,17 @@
   line-height: 1.4;
 }
 
+.blog-bottom {
+  margin-top: auto;  /* push RSS + Subscribe down */
+}
+
+.blog-rss {
+  padding-top: 12px;
+  border-top: 1px dashed var(--green);
+  font-size: 12px;
+}
+
+
 /* ===========================
    Grouped lists
    =========================== */
@@ -306,12 +330,12 @@
    =========================== */
 
 .blog-subscribe {
-  margin-top: auto;             /* push this block to the bottom */
-  padding-top: 12px;
-  border-top: 1px dashed var(--green);
+  margin-top: 12px;
+  padding-top: 0;
   font-size: 12px;
   margin-bottom: 0;
 }
+
 
 .blog-subscribe-title {
   font-size: 12px;
