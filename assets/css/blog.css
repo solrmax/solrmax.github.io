@@ -39,6 +39,7 @@
 
 /* Condensed header inside sidebar */
 .blog-sidebar header {
+  text-align: center;
   margin-bottom: 24px;
   background: none;
   border-bottom: none;
@@ -51,6 +52,8 @@
   padding-right: 0;
   margin: 0;
   padding-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Smaller title/subtitle for blog view */
@@ -70,14 +73,18 @@
   margin-bottom: 10px;
 }
 
-/* Social icons row inside sidebar */
 .blog-sidebar .intro-links {
+  justify-content: center;
   margin-top: 8px;
 }
 
-/* Navigation inside the sidebar header */
 .blog-sidebar .container .site-nav {
   margin-top: -35px;
+}
+
+.blog-sidebar .site-nav ul {
+  justify-content: center;
+  gap: 16px;
 }
 
 /* ===========================
@@ -88,35 +95,133 @@
   margin: 16px 0 0;
   padding: 0 0 8px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column;      /* vertical stack */
+  align-items: flex-start;
+  gap: 6px;
 }
 
+/* Wrapper for each dropdown group (Categories, Tags, Archive) */
+.blog-tool-group {
+  width: 100%;
+}
+
+/* Base style for both links and toggles: link-like, not pills */
 .blog-tool {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(181, 232, 83, 0.35);
+  gap: 6px;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   text-decoration: none;
   color: var(--text-light, #e0e0e0);
-  background: rgba(0, 0, 0, 0.6);
-  transition:
-    background 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.15s ease,
-    opacity 0.15s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
+/* Hover: subtle underline + color accent */
 .blog-tool:hover {
-  border-color: var(--green, #b5e853);
-  background: rgba(181, 232, 83, 0.06);
-  transform: translateY(-1px);
-  opacity: 1;
+  color: var(--green, #b5e853);
+  text-decoration: underline;
+}
+
+/* RSS: keep as a button/pill */
+.blog-tool-rss {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(181, 232, 83, 0.7);
+  background: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+/* Make sure RSS is a bit bolder */
+.blog-tool-rss {
+  font-weight: 600;
+}
+
+/* Toggle links (Categories / Tags / Archive) */
+.blog-tool-toggle {
+  text-align: left;
+}
+
+/* Small caret icon */
+.blog-tool-caret {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* Dropdown panel: now in normal flow, pushes content down */
+.blog-dropdown {
+  display: none;
+  margin-top: 4px;
+  padding-left: 10px;
+  border-left: 1px dashed rgba(181, 232, 83, 0.5);
+}
+
+/* When group is open, show its dropdown */
+.blog-tool-group.is-open .blog-dropdown {
+  display: block;
+}
+
+/* Dropdown list */
+.blog-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-dropdown-item {
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  /*align-items: baseline;*/
+  padding: 3px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.blog-dropdown-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-dropdown-link:hover .blog-label {
+  text-decoration: underline;
+  color: var(--green, #b5e853);
+}
+
+
+.blog-label {
+  margin-right: 8px;
+}
+
+.blog-count {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* Empty states */
+.blog-dropdown-empty {
+  margin: 0;
+  padding: 2px 0 4px;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Mobile tweaks (optional but consistent) */
+@media (max-width: 600px) {
+  .blog-tool {
+    font-size: 10px;
+  }
+
+  .blog-tools {
+    gap: 4px;
+  }
 }
 
 /* ===========================
@@ -124,6 +229,7 @@
    =========================== */
 
 .blog-sidebar > footer {
+  text-align: center;
   margin-top: 24px;
   padding-top: 16px;
   background: none;
@@ -133,6 +239,8 @@
 .blog-sidebar .site-footer {
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blog-sidebar .footer-text {
@@ -140,29 +248,53 @@
   line-height: 1.4;
 }
 
-/* Center text blocks for header and footer inside the sidebar */
-.blog-sidebar header,
-.blog-sidebar > footer {
-  text-align: center;
+/* ===========================
+   Grouped lists
+   =========================== */
+
+.blog-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 16px;
 }
 
-/* Make the inner containers sit centered instead of full-width */
-.blog-sidebar .intro-section.container,
-.blog-sidebar .site-footer {
-  margin-left: auto;
-  margin-right: auto;
+.blog-group-title {
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-/* Center the social icons row */
-.blog-sidebar .intro-links {
-  justify-content: center;
+.blog-group-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
 }
 
-/* If the nav uses flex, this will center the nav items in the blog sidebar */
-.blog-sidebar .site-nav ul {
-  justify-content: center;
+.blog-group-item {
+  margin-bottom: 10px;
 }
 
+.blog-group-line1 {
+  font-size: 13px;
+}
+
+.blog-group-line1 a {
+  text-decoration: none;
+}
+
+.blog-group-line1 a:hover {
+  text-decoration: underline;
+  color: var(--green, #b5e853);
+}
+
+.blog-group-date {
+  font-weight: 500;
+}
+
+.blog-group-line2 {
+  font-size: 11px;
+  opacity: 0.85;
+}
 
 /* ===========================
    Responsive behavior

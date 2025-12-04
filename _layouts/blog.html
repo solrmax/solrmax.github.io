@@ -20,7 +20,7 @@
         <div>
           <header>
             <div class="container intro-section">
-              <a id="a-title" href="{{ '/' | relative_url }}">
+              <a id="a-title" href="{{ '/blog' | relative_url }}">
                 <h1 class="intro-title">{{ site.title }}</h1>
               </a>
               <h2 class="intro-subtitle">
@@ -46,11 +46,150 @@
           </header>
 
           <nav class="blog-tools">
-            <a class="blog-tool" href="{{ site.feed_url | default: '/feed.xml' | relative_url }}">RSS Feed</a>
-            <a class="blog-tool" href="{{ '/blog/categories/' | relative_url }}">Categories</a>
-            <a class="blog-tool" href="{{ '/blog/tags/' | relative_url }}">Tags</a>
-            <a class="blog-tool" href="{{ '/blog/archive/' | relative_url }}">Archive</a>
+            <!-- RSS: stays a button, first item -->
+            <a
+              class="blog-tool blog-tool-rss"
+              href="{{ site.feed_url | default: '/feed.xml' | relative_url }}"
+              target="_blank"
+            >
+              RSS Feed
+            </a>
+
+            <!-- Categories dropdown -->
+            <div class="blog-tool-group" data-dropdown="categories">
+              <button
+                class="blog-tool blog-tool-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="blog-dropdown-categories"
+              >
+                Categories
+                <span class="blog-tool-caret">▾</span>
+              </button>
+
+              <div class="blog-dropdown" id="blog-dropdown-categories">
+                {% if site.categories %}
+                  {%- capture cats_with_counts -%}
+                    {% for cat in site.categories %}
+                      {{ cat[1].size | plus: 1000 }}#{{ cat[0] }}#{{ cat[1].size }}|
+                    {% endfor %}
+                  {%- endcapture -%}
+
+                  {%- assign cats_array = cats_with_counts | split: '|' | sort | reverse -%}
+
+                  <ul class="blog-dropdown-list">
+                    {% for cat_entry in cats_array %}
+                      {% if cat_entry == '' %}
+                        {% continue %}
+                      {% endif %}
+
+                      {% assign parts = cat_entry | split: '#' %}
+                      {% assign cat_name  = parts[1] %}
+                      {% assign cat_count = parts[2] %}
+
+                      <li class="blog-dropdown-item">
+                        <a
+                          class="blog-dropdown-link"
+                          href="{{ '/blog/categories' | relative_url }}#category-{{ cat_name | slugify }}"
+                        >
+                          <span class="blog-label">{{ cat_name }}</span>
+                          <span class="blog-count">{{ cat_count }}</span>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p class="blog-dropdown-empty">No categories yet.</p>
+                {% endif %}
+              </div>
+            </div>
+
+            <!-- Tags dropdown -->
+            <div class="blog-tool-group" data-dropdown="tags">
+              <button
+                class="blog-tool blog-tool-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="blog-dropdown-tags"
+              >
+                Tags
+                <span class="blog-tool-caret">▾</span>
+              </button>
+
+              <div class="blog-dropdown" id="blog-dropdown-tags">
+                {% if site.tags %}
+                  {% capture tags_with_counts %}{% for tag in site.tags %}{% assign tag_name = tag[0] %}{% assign tag_size = tag[1].size %}{% if tag_size < 10 %}0{{ tag_size }}{% else %}{{ tag_size }}{% endif %},{{ tag_name }}@{% endfor %}{% endcapture %}
+                  {% assign tags_array = tags_with_counts | split: '@' | sort | reverse %}
+
+                  <ul class="blog-dropdown-list">
+                    {% for tag_entry in tags_array %}
+                      {% if tag_entry == '' %}
+                        {% continue %}
+                      {% endif %}
+
+                      {% assign parts     = tag_entry | split: ',' %}
+                      {% assign tag_count = parts[0] | plus: 0 %}
+                      {% assign tag_name  = parts[1] %}
+
+                      <li class="blog-dropdown-item">
+                        <a
+                          class="blog-dropdown-link"
+                          href="{{ '/blog/tags' | relative_url }}#tag-{{ tag_name | slugify }}"
+                        >
+                          <span class="blog-label">{{ tag_name }}</span>
+                          <span class="blog-count">{{ tag_count }}</span>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p class="blog-dropdown-empty">No tags yet.</p>
+                {% endif %}
+              </div>
+            </div>
+
+
+            <!-- Archive dropdown -->
+            <div class="blog-tool-group" data-dropdown="archive">
+              <button
+                class="blog-tool blog-tool-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="blog-dropdown-archive"
+              >
+                Archive
+                <span class="blog-tool-caret">▾</span>
+              </button>
+
+              <div class="blog-dropdown" id="blog-dropdown-archive">
+                {% if site.posts and site.posts != empty %}
+                  {% assign posts_by_month = site.posts
+                    | group_by_exp: 'post', 'post.date | date: "%Y-%m"'
+                    | sort: 'name'
+                    | reverse %}
+                  <ul class="blog-dropdown-list">
+                    {% for month in posts_by_month %}
+                      {% assign first_post = month.items | first %}
+                      <li class="blog-dropdown-item">
+                        <a
+                          class="blog-dropdown-link"
+                          href="{{ '/blog/archive' | relative_url }}#archive-{{ month.name }}"
+                        >
+                          <span class="blog-label">
+                            {{ first_post.date | date: "%B %Y" }}
+                          </span>
+                          <span class="blog-count">{{ month.items | size }}</span>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <p class="blog-dropdown-empty">No posts yet.</p>
+                {% endif %}
+              </div>
+            </div>
           </nav>
+
         </div>
 
         <footer>
@@ -73,6 +212,24 @@
         </section>
       </div>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var toggles = document.querySelectorAll('.blog-tool-toggle');
+
+        toggles.forEach(function (toggle) {
+          var group = toggle.closest('.blog-tool-group');
+          if (!group) return;
+
+          toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var isOpen = group.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          });
+        });
+      });
+    </script>
 
     {% include script-custom.html %}
   </body>
