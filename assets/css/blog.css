@@ -443,7 +443,7 @@
 .post-list {
   list-style: none;
   margin: 16px 0 0;
-  padding: 0;
+  padding: 0 0 0 30px;
 }
 
 .post-list-item {
@@ -473,25 +473,24 @@
   color: var(--text-light, #e0e0e0);
 }
 
-/* Links in meta: italic + subtle color */
 .post-meta-link {
-  color: var(--text-light, #e0e0e0);
+  color: inherit;
   text-decoration: none;
-  font-style: italic; /* only category/tag/date text is italic */
+  font-style: italic;
 }
 
 .post-meta-link:hover {
   text-decoration: underline;
+  color: var(--green, #b5e853);
 }
 
-/* Excerpt + Read More sit tightly together */
 .post-list-excerpt {
   font-size: 16px;
   margin: 0 0 2px;
 }
 
 .post-list-read-more {
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
 }
 
