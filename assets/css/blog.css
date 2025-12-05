@@ -106,6 +106,13 @@
   gap: 6px;
 }
 
+.blog-tools-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+}
+
 /* Wrapper for each dropdown group (Categories, Tags, Archive) */
 .blog-tool-group {
   width: 100%;
