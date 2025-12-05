@@ -17,12 +17,7 @@ permalink: /blog
           <span class="post-list-category">
             [
             {% for category in post.categories %}
-              <a
-                href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}"
-                class="post-meta-link"
-              >
-                {{ category }}
-              </a>{% unless forloop.last %}, {% endunless %}
+              <a href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}" class="post-meta-link">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
             ]
           </span>
@@ -31,23 +26,13 @@ permalink: /blog
           <span class="post-list-tags">
             |
             {% for tag in post.tags %}
-              <a
-                href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}"
-                class="post-meta-link"
-              >
-                {{ tag }}
-              </a>{% unless forloop.last %}, {% endunless %}
+              <a href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}" class="post-meta-link">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </span>
         {% endif %}
         <span class="post-list-date">
           |
-          <a
-            href="{{ '/blog/archive' | relative_url }}#archive-{{ post.date | date: '%Y-%m' }}"
-            class="post-meta-link"
-          >
-            {{ post.date | date: "%b %d, %Y" }}
-          </a>
+          <a href="{{ '/blog/archive' | relative_url }}#archive-{{ post.date | date: '%Y-%m' }}" class="post-meta-link">{{ post.date | date: "%b %d, %Y" }}</a>
         </span>
       </div>
       {% if post.excerpt %}
