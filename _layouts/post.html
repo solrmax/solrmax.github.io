@@ -12,12 +12,7 @@ layout: blog
         <span class="post-meta-categories">
           [
           {% for category in page.categories %}
-            <a
-              href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}"
-              class="post-meta-link"
-            >
-              {{ category }}
-            </a>{% unless forloop.last %}, {% endunless %}
+            <a href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}" class="post-meta-link">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
           {% endfor %}
           ]
         </span>
@@ -29,12 +24,7 @@ layout: blog
         {% endif %}
         <span class="post-meta-tags">
           {% for tag in page.tags %}
-            <a
-              href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}"
-              class="post-meta-link"
-            >
-              {{ tag }}
-            </a>{% unless forloop.last %}, {% endunless %}
+            <a href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}" class="post-meta-link">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         </span>
       {% endif %}
@@ -43,12 +33,7 @@ layout: blog
     <!-- Line 3: Date (linked to archive) | Author -->
     <div class="post-meta-line post-meta-line-bottom">
       <span class="post-meta-date">
-        <a
-          href="{{ '/blog/archive' | relative_url }}#archive-{{ page.date | date: '%Y-%m' }}"
-          class="post-meta-link"
-        >
-          {{ page.date | date: "%B %-d, %Y" }}
-        </a>
+        <a href="{{ '/blog/archive' | relative_url }}#archive-{{ page.date | date: '%Y-%m' }}"class="post-meta-link">{{ page.date | date: "%B %-d, %Y" }}</a>
       </span>
       <span class="post-meta-separator"> | </span>
       <span class="post-meta-author">
