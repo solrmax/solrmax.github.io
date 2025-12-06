@@ -16,23 +16,46 @@ permalink: /blog/tags
         <h2 class="blog-group-title">{{ tag_name }}</h2>
         <ul class="blog-group-list">
           {% for post in posts_for_tag %}
-            {% assign cats = post.categories | join: ', ' %}
-            {% if cats == '' %}
-              {% assign cats = '—' %}
-            {% endif %}
-            {% assign tags = post.tags | join: ', ' %}
-            {% if tags == '' %}
-              {% assign tags = '—' %}
-            {% endif %}
             <li class="blog-group-item">
               <div class="blog-group-line1">
                 <span class="blog-group-date">
-                  {{ post.date | date: "%B %-d, %Y" }}
+                  <a
+                    href="{{ '/blog/archive' | relative_url }}#archive-{{ post.date | date: '%Y-%m' }}"
+                    class="post-meta-link"
+                  >
+                    {{ post.date | date: "%B %-d, %Y" }}
+                  </a>
                 </span>:
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               </div>
               <div class="blog-group-line2">
-                Categories: {{ cats }} &middot; Tags: {{ tags }}
+                Categories:
+                {% if post.categories and post.categories != empty %}
+                  {% for category in post.categories %}
+                    <a
+                      href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}"
+                      class="post-meta-link"
+                    >
+                      {{ category }}
+                    </a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                {% else %}
+                  —
+                {% endif %}
+                &middot;
+                Tags:
+                {% if post.tags and post.tags != empty %}
+                  {% for tag_item in post.tags %}
+                    <a
+                      href="{{ '/blog/tags' | relative_url }}#tag-{{ tag_item | slugify }}"
+                      class="post-meta-link"
+                    >
+                      {{ tag_item }}
+                    </a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                {% else %}
+                  —
+                {% endif %}
               </div>
             </li>
           {% endfor %}

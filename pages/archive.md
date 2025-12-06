@@ -21,23 +21,46 @@ permalink: /blog/archive
         <ul class="blog-group-list">
           {% assign posts_in_month = month.items | sort: 'date' | reverse %}
           {% for post in posts_in_month %}
-            {% assign cats = post.categories | join: ', ' %}
-            {% if cats == '' %}
-              {% assign cats = '—' %}
-            {% endif %}
-            {% assign tags = post.tags | join: ', ' %}
-            {% if tags == '' %}
-              {% assign tags = '—' %}
-            {% endif %}
             <li class="blog-group-item">
               <div class="blog-group-line1">
                 <span class="blog-group-date">
-                  {{ post.date | date: "%B %-d, %Y" }}
+                  <a
+                    href="{{ '/blog/archive' | relative_url }}#archive-{{ post.date | date: '%Y-%m' }}"
+                    class="post-meta-link"
+                  >
+                    {{ post.date | date: "%B %-d, %Y" }}
+                  </a>
                 </span>:
                 <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               </div>
               <div class="blog-group-line2">
-                Categories: {{ cats }} &middot; Tags: {{ tags }}
+                Categories:
+                {% if post.categories and post.categories != empty %}
+                  {% for category in post.categories %}
+                    <a
+                      href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}"
+                      class="post-meta-link"
+                    >
+                      {{ category }}
+                    </a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                {% else %}
+                  —
+                {% endif %}
+                &middot;
+                Tags:
+                {% if post.tags and post.tags != empty %}
+                  {% for tag in post.tags %}
+                    <a
+                      href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}"
+                      class="post-meta-link"
+                    >
+                      {{ tag }}
+                    </a>{% unless forloop.last %}, {% endunless %}
+                  {% endfor %}
+                {% else %}
+                  —
+                {% endif %}
               </div>
             </li>
           {% endfor %}
