@@ -526,3 +526,30 @@
   50% { opacity: 0; }
 }
 
+/* ===========================
+   Single post
+   =========================== */
+
+.post-header {
+  margin-bottom: 12px;
+}
+
+.post-title {
+  margin: 0 0 4px;
+}
+
+.post-meta-line {
+  font-size: 11px;
+  font-style: italic;
+  margin: 0 0 2px;
+  color: var(--text-light, #e0e0e0);
+}
+
+.post-meta-line-bottom {
+  margin-bottom: 12px;
+}
+
+.post-meta-separator {
+  font-style: normal;
+  padding: 0 4px;
+}

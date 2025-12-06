@@ -2,13 +2,62 @@
 layout: blog
 ---
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{ page.title }}</h1>
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
 
-<p class="view">by {{ page.author | default: site.author }}</p>
+    <!-- Line 2: [ Categories ] | Tags -->
+    <div class="post-meta-line post-meta-line-top">
+      {% if page.categories and page.categories != empty %}
+        <span class="post-meta-categories">
+          [
+          {% for category in page.categories %}
+            <a
+              href="{{ '/blog/categories' | relative_url }}#category-{{ category | slugify }}"
+              class="post-meta-link"
+            >
+              {{ category }}
+            </a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+          ]
+        </span>
+      {% endif %}
 
-{{content}}
+      {% if page.tags and page.tags != empty %}
+        {% if page.categories and page.categories != empty %}
+          <span class="post-meta-separator"> | </span>
+        {% endif %}
+        <span class="post-meta-tags">
+          {% for tag in page.tags %}
+            <a
+              href="{{ '/blog/tags' | relative_url }}#tag-{{ tag | slugify }}"
+              class="post-meta-link"
+            >
+              {{ tag }}
+            </a>{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
 
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+    <!-- Line 3: Date (linked to archive) | Author -->
+    <div class="post-meta-line post-meta-line-bottom">
+      <span class="post-meta-date">
+        <a
+          href="{{ '/blog/archive' | relative_url }}#archive-{{ page.date | date: '%Y-%m' }}"
+          class="post-meta-link"
+        >
+          {{ page.date | date: "%B %-d, %Y" }}
+        </a>
+      </span>
+      <span class="post-meta-separator"> | </span>
+      <span class="post-meta-author">
+        {{ page.author | default: site.author.name }}
+      </span>
+    </div>
+  </header>
+
+  <section class="post-content">
+    {{ content }}
+  </section>
+</article>
