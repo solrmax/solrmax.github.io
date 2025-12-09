@@ -29,13 +29,24 @@ layout: blog
       {% endif %}
     </div>
 
-    <div class="post-meta-line post-meta-line-bottom">
+    <div class="post-meta-line post-meta-line-middle">
       <span class="post-meta-date">
         <a href="{{ '/blog/archive' | relative_url }}#archive-{{ page.date | date: '%Y-%m' }}" class="post-meta-link">{{ page.date | date: "%B %-d, %Y" }}</a>
       </span>
       <span class="post-meta-separator"> | </span>
       <span class="post-meta-author">
         {{ page.author | default: site.author.name }}
+      </span>
+    </div>
+
+    <div class="post-meta-line post-meta-line-bottom">
+      {% assign words = content | strip_html | number_of_words %}
+        {% assign minutes = words | divided_by: 200 %}
+        {% if minutes == 0 %}
+          {% assign minutes = 1 %}
+        {% endif %}
+      <span class="post-meta-reading">
+        {{ minutes }} min read
       </span>
     </div>
   </header>

@@ -34,6 +34,15 @@ permalink: /blog
           |
           <a href="{{ '/blog/archive' | relative_url }}#archive-{{ post.date | date: '%Y-%m' }}" class="post-meta-link">{{ post.date | date: "%b %d, %Y" }}</a>
         </span>
+        {% assign words = post.content | strip_html | number_of_words %}
+          {% assign minutes = words | divided_by: 200 %}
+          {% if minutes == 0 %}
+            {% assign minutes = 1 %}
+          {% endif %}
+        <span class="post-list-reading">
+          |
+          {{ minutes }} min read
+        </span>
       </div>
       {% if post.excerpt %}
         <p class="post-list-excerpt">

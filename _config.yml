@@ -31,6 +31,7 @@ feed:
 # Profile
 author: 
   name: Esteban Gaete Flores
+  nickname: Tebi
   title: Senior Unity Game Developer
   description: Gameplay & Tools Engineer with 10+ years creating fast, clean systems, responsive gameplay, and tools that boost team efficiency.
 socials:
@@ -41,6 +42,10 @@ socials:
     url: https://www.linkedin.com/in/estebangaeteflores
   - name: github
     url: https://github.com/Theby
+support_me:
+  name: Buy me a Coffe! ☕︎
+  url: https://buymeacoffe.com
+  show: false
 
 # Contact
 chat_platforms:
