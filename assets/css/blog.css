@@ -3,7 +3,7 @@
    =========================== */
 
 .blog-shell {
-  max-width: 1120px;
+  max-width: 1300px;
   margin: 32px auto 40px;
   padding: 0 16px;
   display: grid;
@@ -638,14 +638,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  justify-content: center;
 }
 
 .post-related-item {
   margin: 0;
-  flex: 1 1 220px;
+  flex: 0 1 220px;
   list-style: none;
   list-style-image: none;
 }
+
 
 .post-related-link {
   display: block;
@@ -663,12 +665,6 @@
 .post-related-meta {
   font-size: 11px;
   opacity: 0.85;
-}
-
-@media (max-width: 900px) and (min-width: 601px) {
-  .post-related-list {
-    justify-content: center;
-  }
 }
 
 @media (max-width: 600px) {
