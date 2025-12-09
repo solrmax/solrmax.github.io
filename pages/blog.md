@@ -39,8 +39,10 @@ permalink: /blog
           {% if minutes == 0 %}
             {% assign minutes = 1 %}
           {% endif %}
-        <span class="post-list-reading">
+        <span>
           |
+        </span>
+        <span class="post-list-reading">
           {{ minutes }} min read
         </span>
       </div>

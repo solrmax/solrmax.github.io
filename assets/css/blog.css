@@ -483,6 +483,10 @@
   color: var(--green);
 }
 
+.post-list-reading {
+  font-style: italic;
+}
+
 .post-list-excerpt {
   font-size: 16px;
   margin: 0 0 2px;
