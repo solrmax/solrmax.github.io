@@ -3,7 +3,6 @@ navigation:
     url: /
   - label: Blog
     url: /blog
-    hidden: true
   - label: About
     url: /about
   - label: Contact
