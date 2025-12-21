@@ -26,15 +26,16 @@ code, pre, kbd, samp {
   font-family: system-ui, "IBM Plex Sans", "Segoe UI", Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace !important;
 }
 
-/* Copy button for fenced code blocks */
-pre {
-  position: relative; /* harmless even if already set */
+/* Copy button only on Rouge blocks */
+.highlighter-rouge {
+  position: relative; /* safe even if already set */
 }
 
 .code-copy-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
 
   font-size: 12px;
   line-height: 1;
@@ -62,8 +63,17 @@ pre {
   transform: none;
 }
 
-.code-copy-btn { opacity: 0; pointer-events: none; }
-pre:hover .code-copy-btn { opacity: 1; pointer-events: auto; }
+/* Optional: show only on hover */
+.highlighter-rouge .code-copy-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.highlighter-rouge:hover .code-copy-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 </style>
 
@@ -122,18 +132,17 @@ Ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nasc
 <script>
     // assets/js/code-copy.js
     (() => {
-      function getCodeText(codeEl) {
-        // textContent is safest for code (no layout-dependent whitespace changes).
+      function getTextFromCodeBlock(root) {
+        const codeEl = root.querySelector("pre.highlight > code, pre > code");
+        if (!codeEl) return null;
+
         let text = codeEl.textContent || "";
-
-        // Trim a single trailing newline (common in rendered markdown).
+        // Remove one trailing newline (common in Rouge output)
         if (text.endsWith("\n")) text = text.slice(0, -1);
-
         return text;
       }
 
-      async function copyToClipboard(text) {
-        // Modern API
+      async function copyText(text) {
         if (navigator.clipboard && window.isSecureContext) {
           await navigator.clipboard.writeText(text);
           return;
@@ -148,30 +157,26 @@ Ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nasc
         ta.style.left = "-9999px";
         document.body.appendChild(ta);
         ta.select();
-
         const ok = document.execCommand("copy");
         document.body.removeChild(ta);
-
-        if (!ok) throw new Error("Copy command failed");
+        if (!ok) throw new Error("Copy failed");
       }
 
-      function addCopyButtons() {
-        // Only code blocks that are actually <pre><code>...</code></pre>
-        const codeBlocks = document.querySelectorAll("pre > code");
+      function addButtons() {
+        // Only Rouge-highlighted blocks (your exact wrapper)
+        const blocks = document.querySelectorAll(".highlighter-rouge");
 
-        codeBlocks.forEach((codeEl) => {
-          const pre = codeEl.parentElement;
-          if (!pre) return;
+        blocks.forEach((block) => {
+          if (block.dataset.copyButton === "true") return;
 
-          // Avoid double-injecting
-          if (pre.dataset.copyButton === "true") return;
-          pre.dataset.copyButton = "true";
+          const text = getTextFromCodeBlock(block);
+          if (!text) return;
 
-          // Make sure we can position the button
-          const preStyle = window.getComputedStyle(pre);
-          if (preStyle.position === "static") {
-            pre.style.position = "relative";
-          }
+          block.dataset.copyButton = "true";
+
+          // Ensure we can absolutely position the button relative to this block
+          const style = window.getComputedStyle(block);
+          if (style.position === "static") block.style.position = "relative";
 
           const btn = document.createElement("button");
           btn.type = "button";
@@ -179,33 +184,31 @@ Ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nasc
           btn.textContent = "Copy";
 
           btn.addEventListener("click", async () => {
-            const text = getCodeText(codeEl);
-
             btn.disabled = true;
-            const prev = btn.textContent;
+            const old = btn.textContent;
 
             try {
-              await copyToClipboard(text);
+              await copyText(text);
               btn.textContent = "Copied!";
             } catch (e) {
               btn.textContent = "Failed";
-              // Optional: console.debug(e);
             }
 
-            window.setTimeout(() => {
-              btn.textContent = prev;
+            setTimeout(() => {
+              btn.textContent = old;
               btn.disabled = false;
             }, 1200);
           });
 
-          pre.appendChild(btn);
+          block.appendChild(btn);
         });
       }
 
       if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", addCopyButtons);
+        document.addEventListener("DOMContentLoaded", addButtons);
       } else {
-        addCopyButtons();
+        addButtons();
       }
     })();
+
 </script>
