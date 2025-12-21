@@ -1,6 +1,6 @@
 ---
 title: "The Fifth Corner Devlog"
-tags: [ blog, update ]
+tags: [ update ]
 category: blog
 excerpt_separator: "<!--more-->"
 ---
