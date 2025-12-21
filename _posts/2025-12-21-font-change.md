@@ -8,7 +8,7 @@ category: blog
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at mattis dui. Sed sed metus nec nisl cursus vulputate. In tristique ex a nisi facilisis, id tristique lacus luctus. Suspendisse sodales elementum sodales. Cras varius facilisis congue. Cras ullamcorper iaculis fermentum. Suspendisse nec ligula arcu. Praesent commodo tellus non eleifend ultricies. Aliquam id neque suscipit, eleifend ipsum quis, ullamcorper massa. Nunc ac diam enim. Mauris mollis maximus massa a vulputate. Maecenas elementum luctus neque, sit amet tempus erat. Sed nec arcu non sapien aliquet sollicitudin. Sed id porta eros, at viverra augue. Nunc id placerat lacus.
 
-```C#
+```csharp
 public static async Task WaitingExampleAsync(string animationName)
 {
     await PlayAnimationAsync(animationName);
