@@ -1,5 +1,7 @@
-.gist {
-  filter: invert(100%) hue-rotate(180deg) brightness(110%);
+.gist .gist-file,
+.gist .gist-data,
+.gist .gist-meta {
+  filter: invert(1) hue-rotate(180deg) brightness(110%);
 }
 
 .gist .blob-code, 
