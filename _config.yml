@@ -1,8 +1,8 @@
 # Site Data
-title: The Fifth Corner - Portfolio & Devlog
+title: Maxime Solaire - Portfolio & Devlog
 description: All about my game development challenges, programming insights, and creative projects.
 image: /assets/images/default-preview-image.png
-url: https://theby.github.io
+url: https://solrmax.github.io
 baseurl: ""
 
 # Configuration
@@ -10,7 +10,7 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
-google_analytics: G-M7HRV5WG9L
+#google_analytics: G-M7HRV5WG9L
 show_downloads: false
 show_navigation: true
 permalink: /blog/:title/
@@ -29,19 +29,21 @@ feed:
 
 
 # Profile
-author: 
-  name: Esteban Gaete Flores
-  nickname: Tebi
-  title: Senior Unity Game Developer
-  description: Gameplay & Tools Engineer with 10+ years creating fast, clean systems, responsive gameplay, and tools that boost team efficiency.
+author:
+  name: Maxime Solaire
+  nickname: Layar
+  title: Senior Unity Developer & Technical Producer
+  description: 10+ years building games from prototype to production—technical development, team leadership, and cross-discipline coordination to ship polished experiences on time.
 socials:
   - name: cv
     url: /resume
     inTab: true
   - name: linkedin
-    url: https://www.linkedin.com/in/estebangaeteflores
+    url: https://www.linkedin.com/in/msolaire
   - name: github
-    url: https://github.com/Theby
+    url: https://github.com/solrmax
+  - name: itch.io
+    url: https://layar.itch.io
 support_me:
   name: Buy me a Coffe! ☕︎
   url: https://buymeacoffe.com
@@ -49,14 +51,8 @@ support_me:
 
 # Contact
 chat_platforms:
-    - name: x
-      url: https://x.com/TebiFestival
-      handler: TebiFestival
-    - name: bluesky
-      url: https://bsky.app/profile/tebisight.bsky.social
-      handler: tebisight.bsky.social
     - name: linkedin
-      url: https://www.linkedin.com/in/estebangaeteflores/
-      handler: in/estebangaeteflores/
+      url: https://www.linkedin.com/in/msolaire/
+      handler: in/msolaire/
     - name: discord
-      handler: tebifestival
+      handler: maxlayar

@@ -121,11 +121,14 @@ permalink: /about
         <a href="{{ linkedin.url }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="/contact">Contact me</a>
       </div>
+      <p style="margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--green-alpha-30); font-size: 0.85rem; opacity: 0.7;">
+        <em>Site developed by Esteban Gaete Flores and Maxime Solaire</em>
+      </p>
     </div>
     <div class="about-photo">
       <img
         src="/assets/images/default-preview-image.png"
-        alt="Portrait of Esteban Gaete Flores"
+        alt="Portrait of Maxime Solaire"
         loading="lazy"
       >
     </div>

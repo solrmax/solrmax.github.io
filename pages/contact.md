@@ -113,7 +113,7 @@ permalink: /contact
 
 <div class="contact-layout">
   <form
-    action="https://formspree.io/f/mkgdbnba"
+    action="https://formspree.io/f/xvzgeqra"
     method="POST"
     class="contact-form"
   >
@@ -143,7 +143,7 @@ permalink: /contact
     <h2>Prefer email?</h2>
     <p>
       You can also contact me directly at
-      <a href="mailto:estebanagf@gmail.com">estebanagf@gmail.com</a>.
+      <a href="mailto:maxarobaze@gmail.com">maxarobaze@gmail.com</a>.
     </p>
     <h2>Or maybe just a quick chat?</h2>
     <p>You can find me on:</p>
@@ -151,7 +151,8 @@ permalink: /contact
       {% for platform in site.chat_platforms %}
         <li>
           <span class="contact-links-icon">
-            <img src="/assets/icons/platforms/{{ platform.name }}.svg" alt="{{ platform.name }}">
+            {% assign icon_ext = site.data.platforms[platform.name].ext | default: "svg" %}
+            <img src="/assets/icons/platforms/{{ platform.name }}.{{ icon_ext }}" alt="{{ platform.name }}">
           </span>
           {% if platform.url %}
             <a href="{{ platform.url }}" target="_blank" rel="noopener">

@@ -28,3 +28,6 @@ x:
   name: X
 unityassetstore:
   name: Asset Store
+gmtk:
+  name: GMTK
+  ext: png

@@ -1,328 +1,55 @@
-- title: Loop Boxes
+- title: Hoodie Hitchhike
   project_description: >
-    Three looping stages. Your past actions stay forever, so plan carefully!
+    _
   description: >
-    Solo developed during GMTK 2025 using Unity 6. I built all core systems,
-    level design, SFX, and music, and adapted free art assets to fit the game.
-    Focused on rapid prototyping, puzzle iteration, and polish under a tight
-    deadline.
-  image: assets/images/p_loopboxes.gif
-  url: https://tebifestival.itch.io/loop-boxes
-  release: Aug 2025
-  tags: [2D, Sokoban, Puzzle]
+    At each stop, two animal hoodie hitchhikers appear; with only three seats, you decide who hops in and who gets dropped.
+  image: assets/images/p_hoodiehitchhike.gif
+  url: https://layar.itch.io/hoodie-hitchhike
+  release: Game For A Cause - Oct 2025
+  tags: [2D, puzzle, narrative]
   platforms:
     - id: itchio
-      url: https://tebifestival.itch.io/loop-boxes
+      url: https://layar.itch.io/hoodie-hitchhike
 
-- title: Amor a Primera Vista
+- title: Is it today yet?
   project_description: >
-    You said yes to all on a dating app. Now you are dating an actual Angel!
+    _
   description: >
-    Developed for Global Game Jam 2024 with a small team. I led all Unity
-    implementation, defining scene architecture, dialogue flow, and system
-    scripting. Ensured smooth narrative delivery, efficient asset integration,
-    and polished UI under tight deadlines.
-  image: assets/images/p_firstsightlove.gif
-  url: https://globalgamejam.org/games/2024/amor-primera-vista-love-first-sight-7
-  release: Jan 2024
-  tags: [Visual Novel, Dating, Narrative]
-  platforms:
-    - id: ggj
-      url: https://globalgamejam.org/games/2024/amor-primera-vista-love-first-sight-7
-
-- title: Mariana Strange
-  project_description: >
-    Your brother is missing. Search for him in the dark depths of the ocean.
-  description: >
-    Created for Game Jam +- Santiago, where I served as Lead Programmer. I
-    defined the project’s technical architecture, implemented core systems, and
-    ensured smooth integration of gameplay, narrative, and art under a rapid
-    production cycle.
-  image: assets/images/p_marianastrange.gif
-  url: https://gamejolt.com/games/MarianaStrange/430773
-  release: Aug 2019
-  tags: [Mystery, Exploration]
-  platforms:
-    - id: gamejolt
-      url: https://gamejolt.com/games/MarianaStrange/430773
-
-- title: O B S S E S I V E
-  project_description: >
-    You need to send an important message to Motherboard, be careful.
-  description: >
-    I contributed original music to the project, composing and producing the 
-    game’s second track to support its atmosphere and narrative tone.
-  image: assets/images/p_obssesive.gif
-  url: https://klonoz.itch.io/obssesive
-  release: Aug 2019
-  tags: [2D, Adventure, Puzzle]
+    A short and quiet game about daily rituals, small changes, and the slow unraveling of a familiar world.
+  image: assets/images/p_isittodayyet.gif
+  url: https://layar.itch.io/is-it-today-yet
+  release: GMTK - Aug 2025
+  tags: [2D, narrative]
   platforms:
     - id: itchio
-      url: https://klonoz.itch.io/obssesive
+      url: https://layar.itch.io/is-it-today-yet
+    - id: gmtk
+      url: https://itch.io/jam/gmtk-2025/rate/3774522
 
-- title: FOR THEM
+- title: HydraRunaway
   project_description: >
-    Feed and protect your cubs from forest dangers. They depend on you!
+     _
   description: >
-    As Lead Programmer for FOR THEM (Global Game Jam 2019), I architected the
-    core survival/adventure systems, managed asset integration, and implemented
-    gameplay logic. I ensured stability, performance, and a cohesive experience
-    during the tight jam schedule.
-  image: assets/images/p_forthem.gif
-  url: https://v3.globalgamejam.org/2019/games/them
-  release: Jan 2019
-  tags: [Survival, Adventure]
-  platforms:
-    - id: ggj
-      url: https://v3.globalgamejam.org/2019/games/them
-
-- title: Super Oso
-  hidden: true
-  project_description: >
-    To do later
-  description: >
-    Advergame for Falabella’s 2018 Technology Fair. I directed the project,
-    programmed features, and implemented provided art.
-  image: assets/images/p_superoso.gif
-  url: https://apps.apple.com/us/app/agente-oso/id1434320450
-  release: Jun 2018
-  tags: [Advergame, Arcade]
-  platforms:
-    - id: ios
-      url: https://apps.apple.com/us/app/agente-oso/id1434320450
-
-- title: Byted Noise
-  project_description: >
-    A zombie apocalypse! Use your radio to find survivors in the streets.
-  description: >
-    Built as Lead Programmer during Global Game Jam 2018. I defined the project
-    architecture, coded survival and open-world systems, integrated user
-    interactions and audio/visual assets, and delivered a stable arcade-style
-    zombie-apocalypse prototype.
-  image: assets/images/p_bytednoise.gif
-  url: https://v3.globalgamejam.org/2018/games/byted-noise
-  release: Jan 2018
-  tags: [Arcade, Open-World]
-  platforms:
-    - id: ggj
-      url: https://v3.globalgamejam.org/2018/games/byted-noise
-
-- title: Touchdown Champ
-  project_description: >
-    Run against the competigin teams that want to stop you. Reach as far as you can!
-  description: >
-    I worked on core data systems and gameplay architecture, implementing
-    scalable structures for progression, state handling, and content
-    integration to support fast-paced autorunner gameplay.
-  image: assets/images/p_touchdownchamp.gif
-  url: https://play.google.com/store/apps/details?id=com.tapsense.touchdownchampion
-  release: Jun 2017
-  tags: [Arcade, Autorunner]
-  platforms:
-    - id: android
-      url: https://play.google.com/store/apps/details?id=com.tapsense.touchdownchampion
-
-- title: Sketch Rally
-  project_description: >
-    Ride non stop in a sketchy world! Pick up gas and avoid obstacle to go as far as you can!
-  description: >
-    I contributed to UI design and implemented custom tools to streamline content
-    creation and workflow. Supported gameplay and art teams by improving usability 
-    and reducing iteration time across the autorunner’s production cycle.
-  image: assets/images/p_sketchrally.gif
-  url: https://play.google.com/store/apps/details?id=com.tapsense.sketchrally
-  release: Jun 2017
-  tags: [Arcade, Autorunner]
-  platforms:
-    - id: android
-      url: https://play.google.com/store/apps/details?id=com.tapsense.sketchrally
-
-- title: Caiam Piter (CPMK)
-  project_description: >
-    Your mother fungus sends you to explore the world and find virgin lands.
-  description: >
-    As Director, Lead Programmer, and Designer of Caiam Piter and the Mushroom
-    Kingdom, I oversaw full development for PC and Switch, defined core systems
-    and design vision, and drove the project to recognition (<a
-    href="https://www.indiedb.com/groups/2018-indie-of-the-year-awards/top100">top-100
-    IndieDB 2018</a>, <a
-    href="https://x.com/CaiamPiterCPMK/status/1120753853744287744">Indie Showcase
-    finalist</a>).
-  image: assets/images/p_caiampiter.gif
-  url: https://x.com/caiampitercpmk
-  release: May 2017
-  tags: [Roguelike, 2D, Pixel Art, Top-Down]
-  platforms:
-    - id: x
-      url: https://x.com/caiampitercpmk
-
-- title: Father.IO
-  hidden: true
-  project_description: >
-    To do later
-  description: >
-    Mobile RTS with AR and FPS elements. I worked as an intern for three months
-    developing RTS systems as part of Gamelogic.
-  image: assets/images/p_fatherio.gif
-  url: https://father.io
-  release: Jan 2017
-  tags: [RTS, AR, Mobile]
-  platforms:
-    - id: website
-      url: https://father.io
-
-- title: Empathy
-  project_description: >
-    People in the hospital need a hand to find happiness. Help them through.
-  description: >
-    Created during Global Game Jam 2017. As Lead Programmer, I defined the core
-    systems, implemented first-person puzzle mechanics, and coordinated asset and
-    narrative integration to deliver a cohesive and polished prototype under
-    tight constraints.
-  image: assets/images/p_empathy.gif
-  url: https://v3.globalgamejam.org/2017/games/empathy-game-about-depression
-  release: Jan 2017
-  tags: [First-Person, Puzzle]
-  platforms:
-    - id: ggj
-      url: https://v3.globalgamejam.org/2017/games/empathy-game-about-depression
-
-- title: Grids Pro
-  project_description: >
-    Provides 1D–3D grids, shapes, A* pathfinding, range queries, and editor-configurable layouts.
-  description: >
-    Unity framework for building and managing complex multi-shape grids. I led 
-    the full migration to newer Unity versions, refactored core systems for 
-    stability, and introduced additional features that streamlined editor 
-    workflows and expanded the tool’s capabilities.
-  image: assets/images/p_gridspro.gif
-  url: https://assetstore.unity.com/packages/tools/utilities/grids-pro-66291
-  release: Jul 2016
-  tags: [Tool, Utilities, Grids]
-  platforms:
-    - id: unityassetstore
-      url: https://assetstore.unity.com/packages/tools/utilities/grids-pro-66291
-
-- title: Abstract Strategy
-  project_description: >
-    Framework for creating grid-based strategy games with built-in behavior-tree AI.
-  description: >
-    Unity framework for building grid-based board games with discrete movement. I 
-    led the upgrade to newer Unity versions, refactored core systems, and added 
-    features that improved AI behavior design, tooling capabilities, and overall 
-    developer workflow.
-  image: assets/images/p_abstractstrategy.gif
-  url: https://assetstore.unity.com/packages/tools/game-toolkits/abstract-strategy-39377
-  release: Jun 2016
-  tags: [Tool, Game Toolkit, AI]
-  platforms:
-    - id: unityassetstore
-      url: https://assetstore.unity.com/packages/tools/game-toolkits/abstract-strategy-39377
-
-- title: Gamelogic Extensions
-  project_description: >
-    Extensions that enhance Unity with utilities, data structures, and editor tools.
-  description: >
-    Advanced extension toolkit that expands Unity and C# capabilities with new utilities, 
-    data structures, and editor improvements. I handled the upgrade to newer Unity 
-    ersions, enhanced core systems, and introduced quality-of-life features that 
-    streamlined developer workflows.
-  image: assets/images/p_gamelogicextensions.gif
-  url: https://assetstore.unity.com/packages/tools/utilities/gamelogic-extensions-19323
-  release: May 2016
-  tags: [Tool, Utilities, Extension]
-  platforms:
-    - id: unityassetstore
-      url: https://assetstore.unity.com/packages/tools/utilities/gamelogic-extensions-19323
-
-- title: New Flame
-  project_description: >
-    You broke the ritual. Bring the flame back to the hill and end the curse!
-  description: >
-    Created during Global Game Jam 2016. As Lead Programmer and Game Designer, I
-    defined the core platforming systems, built interaction and traversal
-    mechanics, and guided overall gameplay flow while coordinating asset
-    integration under tight constraints.
-  image: assets/images/p_newflame.gif
-  url: https://v3.globalgamejam.org/2016/games/new-flame
-  release: Feb 2016
-  tags: [Platformer, Adventure]
-  platforms:
-    - id: ggj
-      url: https://v3.globalgamejam.org/2016/games/new-flame
-
-- title: Descend Into Heaven
-  project_description: >
-    Descend to recover what was taken from you. Do not let them stop you!
-  description: >
-    As Project Manager and Lead Programmer, I directed development, defined the
-    technical architecture, and implemented core platforming and combat systems.
-    I coordinated design, art, and code workflows to deliver a cohesive
-    action-adventure experience.
-  image: assets/images/p_descendintoheaven.gif
-  url: https://spoonmangames.itch.io/descendintoheaven
-  release: Sep 2015
-  tags: [Platformer, Action-Adventure]
+    A multiplayer game in which you need to collaborate with your mate in order to survive the hydra.
+  image: assets/images/p_hydrarunaway.gif
+  url: https://itch.io/jam/gmtk-2021/rate/1086865
+  release: GMTK - 2021
+  tags: [survival, multiplayer, side scroller]
   platforms:
     - id: itchio
-      url: https://spoonmangames.itch.io/descendintoheaven
+      url: https://layar.itch.io/hydrarunaway
+    - id: gmtk
+      url: https://itch.io/jam/gmtk-2021/rate/1086865
 
-- title: Sunset Roboto
-  hidden: true
+- title: ¡Bailad Muertos!
   project_description: >
-    To do later
+    A frantic 1V1 fighting game between make-your-own voodoo war dolls.
   description: >
-    Auto Runner robot go for the sunset.
-  image: assets/images/p_sunsetroboto.gif
-  url: https://bitbucket.org/Theby/sunsetroboto/src/master
-  release: Sept 2015
-  tags: [Auto runner]
+    Using silly ragdoll physics, punch your enemy like a piñata and steal his candies in order to evolve your puppet into a Muerte machine!
+  image: assets/images/p_bailadmuertos.jpg
+  url: https://v3.globalgamejam.org/2016/games/%C2%A1bailad-muertos
+  release: GGJ - 2016
+  tags: [versus, fighting, multiplayer, 2d physics]
   platforms:
-    - id: bitbucket
-      url: https://bitbucket.org/Theby/sunsetroboto/src/master
-
-- title: King K. A Goblin Defense Game
-  hidden: true
-  project_description: >
-    To do later
-  description: >
-    Tower defense RTS created for the Impulsa Games Jam. I designed, directed,
-    and programmed the game in XNA C# for PC.
-  image: assets/images/p_kingk.gif
-  url: https://gamejolt.com/games/king-k-a-goblin-defense-game/82821
-  release: Aug 2015
-  tags: [Tower-Defense, RTS]
-  platforms:
-    - id: gamejolt
-      url: https://gamejolt.com/games/king-k-a-goblin-defense-game/82821
-
-- title: Zelda Remade
-  project_description: >
-    Explore a classic adventure with a new look in this exploration-only demo.
-  description: >
-    A personal fan remake built with BennuGD, where I implemented core
-    exploration systems, map logic, and engine adaptations to recreate the feel
-    of classic Zelda with SNES-style visuals. Focused on clean architecture and
-    faithful gameplay flow.
-  image: assets/images/p_zelda.gif
-  release: Jul 2011
-  url: https://github.com/SpoonmanGames/ZeldaRemade
-  tags: [Exploration, Action-Adventure]
-  platforms:
-    - id: github
-      url: https://github.com/SpoonmanGames/ZeldaRemade
-
-- title: Bomber-Chan
-  project_description: >
-    Classic explosive fun! A BennuGD tech demo showing expanded capabilities.
-  description: >
-    A BennuGD tech-demo where I recreated Super Bomberman 5 Gold mechanics,
-    implementing grid-based logic, bomb and multiplayer, expanded controller
-    support, and custom tournament features to push the engine’s capabilities.
-  image: assets/images/p_bomberchan.gif
-  url: https://github.com/SpoonmanGames/BomberChan
-  release: May 2011
-  tags: [Arcade, Retro]
-  platforms:
-    - id: github
-      url: https://github.com/SpoonmanGames/BomberChan
+    - id: ggj
+      url: https://v3.globalgamejam.org/2016/games/%C2%A1bailad-muertos

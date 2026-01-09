@@ -1,93 +1,55 @@
-- title: The Eightfold Path
+- title: Orphan Age
   project_description: >
-    A serene open-world puzzle adventure where you explore a vibrant astral
-    realm and solve challenges inspired by Eastern philosophy.
+    A life-sim game where you look after a band of orphans in a cyberpunk warzone.
   description: >
-    Improved Switch/PC performance by 50%+ via profiling and optimization. Built
-    tools that auto-ported 100% of Construct 3 content into Unity, reducing setup
-    time by ~80%. Implemented streaming for seamless world traversal.
-  image: assets/images/p_eightfoldpath.gif
-  url: https://store.steampowered.com/app/1736620/The_Eightfold_Path
-  release: Friendly Llama - Aug 2024
-  tags: [2D, Open World, Puzzle Adventure]
+    Technical development including <b>shaders</b>, <b>tools</b>, <b>optimization</b>, <b>multi-platform builds</b> (Windows, macOS, Linux), <b>CI/CD pipeline</b>, <b>asset management (Git/SVN)</b>, <b>UI/gameplay/sound integration</b>, and <b>systems rework</b>.<br/><br/> 
+    Team and production management, workflow creation, quality control, contract negotiations with partners and editor, freelancer guidance, <b>mentoring</b>, company management including recruitment, crisis management, and mediation.<br/><br/> 
+    Cross-discipline coordination with GD and art teams while maintaining project vision.
+  image: assets/images/p_orphanage.gif
+  url: https://store.steampowered.com/app/767660/Orphan_Age/
+  release: Studio Black Flag - Aborted (2016-2024)
+  tags: [3D, base building, cyberpunk, futuristic, life sim, management, narrative, survivor]
   platforms:
     - id: steam
-      url: https://store.steampowered.com/app/1736620/The_Eightfold_Path/
-    - id: xbox
-      url: https://www.xbox.com/es-CL/games/store/the-eightfold-path/9pk5njsvtnht
-    - id: switch
-      url: https://www.nintendo.com/us/store/products/the-eightfold-path-switch
+      url: https://store.steampowered.com/app/767660/Orphan_Age/
+    - id: itchio
+      url: https://studio-black-flag.itch.io/orphan-age
 
-- title: NBA Clash
+- title: Click Of Cthulhu
   project_description: >
-    A fast-paced, real-time 3v3 mobile basketball game where you build a squad
-    of NBA stars, swipe and tap to score, and aim to be the first to 11 points.
+    Idle/clicker game in a lovecraftian setup with gameboy vibes
   description: >
-    Integrated SDKs and analytics to cut build time from 7 days to 2. Debugged
-    multiplayer systems to improve match stability and sync. Coordinated
-    cross-team workflows between Chile and US engineering groups.
-  image: assets/images/p_nbaclash.gif
-  url: https://www.youtube.com/watch?v=eKohkv9YPKY
-  release: Globant -Nov 2022
-  tags: [F2P, Deck Builder, Online Multiplayer]
+    Complete <b>code refactoring</b> from visual scripting (PlayMaker) to <b>C# architecture</b>. <b>Performance optimization</b>, <b>debugging</b>, and <b>code restructuring</b> to improve maintainability and execution speed. Technical cleanup and bug resolution throughout the codebase.
+  image: assets/images/p_clickofcthulhu.gif
+  url: https://studio-black-flag.itch.io/click-of-cthulhu
+  release: Studio Black Flag - Feb 2020
+  tags: [2D, city builder, clicker, cthulhu, management, pixel art, retro]
   platforms:
-    - id: ios
-      url: https://apps.apple.com/us/app/nbaclash
+    - id: itchio
+      url: https://studio-black-flag.itch.io/click-of-cthulhu
+
+- title: Yrminsul
+  project_description: >
+    A strategy game in a persistent universe where each combat is held in the form of a Tower Defence. Crush the forces of good!
+  description: >
+    <b>Multi-platform deployment</b> including Linux and macOS builds with platform-specific <b>optimization</b> and testing. <b>Steam API integration</b> (achievements, cloud saves, leaderboards). <b>Build pipeline</b> configuration and cross-platform compatibility management.
+  image: assets/images/p_yrminsul.jpg
+  url: https://store.steampowered.com/app/412490/Yrminsul/
+  release: Studio Black Flag - Mar 2016
+  tags: [3D, tower defense, adventure, strategic]
+  platforms:
+    - id: steam
+      url: https://store.steampowered.com/app/412490/Yrminsul/
+
+- title: Escape Light
+  project_description: >
+    Android stealth game, don't be seen by light beams!
+  description: >
+    I did <b>everything</b> on this one, unfortunately it's not available on the google play store anymore... <s>(but can be found on gray stores...)</s>
+  image: assets/images/p_escapelight.jpg
+  #url:
+  release: Solo Dev - 2015
+  tags: [ 2D, stealth, adventure, strategic, 2d physics ]
+  platforms:
     - id: android
-      url: https://play.google.com/store/apps/details?id=com.niftygames.nbaclash
-
-- title: Linked Mask
-  project_description: >
-    A hand-crafted 2D action-adventure where you battle enemies, explore
-    mystical landscapes, and collect powerful masks to reach the final challenge.
-  description: >
-    Led full development from concept to release. Built core gameplay, combat,
-    and platforming systems in Unity. Created custom editor tools and a reusable
-    framework, and coordinated a 6–12 person team across disciplines.
-  image: assets/images/p_linkedmask.gif
-  url: https://store.steampowered.com/app/1111590/Linked_Mask/
-  release: Spoonman Games - Sep 2022
-  tags: [2D, Action-Adventure, Platformer]
-  platforms:
-    - id: steam
-      url: https://store.steampowered.com/app/1111590/Linked_Mask/
-
-- title: What Lies in the Multiverse
-  project_description: >
-    A dimension-shifting puzzle-platformer mixing comedy and chaos as you hop
-    between parallel worlds to solve challenges and unravel a cosmic mystery.
-  description: >
-    Ported the full game from GameMaker 1 to GameMaker 2, upgrading core systems
-    for stability, larger levels, and multi-platform support. Enhanced scripting
-    and cinematic tools, cutting implementation time by ~50%.
-  image: assets/images/p_multiverse.gif
-  url: https://store.steampowered.com/app/1721170/What_Lies_in_the_Multiverse/
-  release: IguanaBee - Mar 2022
-  tags: [2D, Puzzle-Platformer]
-  platforms:
-    - id: steam
-      url: https://store.steampowered.com/app/1721170/What_Lies_in_the_Multiverse/
-    - id: playstation
-      url: httpsstore.playstation.com/es-cl/concept/10003943
-    - id: xbox
-      url: https://www.xbox.com/es-cl/games/store/what-lies-in-the-multiverse/9pn0r2dgzkmr
-    - id: switch
-      url: https://www.nintendo.com/us/store/products/what-lies-in-the-multiverse-switch
-
-- title: Garden Joy
-  project_description: >
-    A relaxing garden-design mobile game where you craft layouts, decorate
-    outdoor spaces, and grow your dream virtual garden.
-  description: >
-    Delivered 25+ live updates for a 1M+ install mobile title. Integrated new
-    content, backend data, and UI features while maintaining strong performance.
-    Supported a 20+ person team and a 4.8/5 App Store rating.
-  image: assets/images/p_gardenjoy.gif
-  url: https://www.gardenjoygame.com
-  release: Burlingames Studios - Jan 2022
-  tags: [F2P, Garden Design, Simulation Game]
-  platforms:
-    - id: ios
-      url: https://apps.apple.com/us/app/garden-joy-design-game/id1618284064
-    - id: android
-      url: https://play.google.com/store/apps/details?id=com.scopely.gardenjoy
+      url: https://play.google.com

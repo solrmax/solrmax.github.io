@@ -38,7 +38,8 @@ pageType: projects
           <div class="platform-badges">
             {% for plat in item.platforms %}
               <a class="platform-badge" href="{{ plat.url }}" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/platforms/{{ plat.id }}.svg" alt="{{ plat.id }} icon">
+                {% assign icon_ext = site.data.platforms[plat.id].ext | default: "svg" %}
+                <img src="assets/icons/platforms/{{ plat.id }}.{{ icon_ext }}" alt="{{ plat.id }} icon">
                 {{ site.data.platforms[plat.id].name }}
               </a>
             {% endfor %}
@@ -50,6 +51,7 @@ pageType: projects
 </div>
 {% endfor %}
 
+{% if site.data.projects-communities %}
 # Communities
 
 {% for item in site.data.projects-communities %}
@@ -84,7 +86,8 @@ pageType: projects
           <div class="platform-badges">
             {% for plat in item.platforms %}
               <a class="platform-badge" href="{{ plat.url }}" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/platforms/{{ plat.id }}.svg" alt="{{ plat.id }} icon">
+                {% assign icon_ext = site.data.platforms[plat.id].ext | default: "svg" %}
+                <img src="assets/icons/platforms/{{ plat.id }}.{{ icon_ext }}" alt="{{ plat.id }} icon">
                 {{ site.data.platforms[plat.id].name }}
               </a>
             {% endfor %}
@@ -95,8 +98,11 @@ pageType: projects
   </div>
 </div>
 {% endfor %}
+{% endif %}
 
-# Smaller Projects
+
+{% if site.data.projects-smaller-projects %}
+# Game Jam Projects
 
 <div class="smaller-projects-grid">
   {% for item in site.data.projects-smaller-projects %}
@@ -129,7 +135,8 @@ pageType: projects
         <div class="platform-badges">
           {% for plat in item.platforms %}
             <a class="platform-badge" href="{{ plat.url }}" target="_blank" rel="noopener noreferrer">
-              <img src="assets/icons/platforms/{{ plat.id }}.svg" alt="{{ plat.id }} icon">
+              {% assign icon_ext = site.data.platforms[plat.id].ext | default: "svg" %}
+              <img src="assets/icons/platforms/{{ plat.id }}.{{ icon_ext }}" alt="{{ plat.id }} icon">
               {{ site.data.platforms[plat.id].name }}
             </a>
           {% endfor %}
@@ -139,7 +146,9 @@ pageType: projects
   {% endif %}
   {% endfor %}
 </div>
+{% endif %}
 
+{% if site.data.projects-talks %}
 # Public Speaking & Interviews
 
 <div class="talks-list">
@@ -165,7 +174,9 @@ pageType: projects
     </div>
   {% endfor %}
 </div>
+{% endif %}
 
+{% if site.data.projects-papers %}
 # Publications
 
 <div class="talks-list">
@@ -191,6 +202,7 @@ pageType: projects
     </div>
   {% endfor %}
 </div>
+{% endif %}
 
 # What’s Next?
 

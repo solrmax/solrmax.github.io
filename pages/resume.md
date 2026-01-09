@@ -84,12 +84,12 @@ permalink: /resume
 # Resume
 
 <div class="download-wrapper">
-  <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Esteban%20Gaete%20Flores%20-%20Senior%20Unity%20Developer.pdf" class="btn btn-download" download><span class="icon"></span>Download PDF</a>
+  <a href="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Maxime%20SOLAIRE%20-%20Resume%202026.pdf" class="btn btn-download" download><span class="icon"></span>Download PDF</a>
 </div>
 
 <div class="pdf-wrapper">
 	<object
-	  data="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Esteban%20Gaete%20Flores%20-%20Senior%20Unity%20Developer.pdf"
+	  data="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Maxime%20SOLAIRE%20-%20Resume%202026.pdf"
 	  width="1000"
 	  height="1000"
 	  type="application/pdf">

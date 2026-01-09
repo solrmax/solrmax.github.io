@@ -1,4 +1,4 @@
-# theby.github.io
+# solrmax.github.io
 
 Portfolio and blog about programming and video games
 
