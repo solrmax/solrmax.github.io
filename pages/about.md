@@ -122,7 +122,7 @@ permalink: /about
         <a href="/contact">Contact me</a>
       </div>
       <p style="margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--green-alpha-30); font-size: 0.85rem; opacity: 0.7;">
-        <em>Site developed by Esteban Gaete Flores and Maxime Solaire</em>
+        <em>Site developed by <a href="https://theby.github.io/" target="_blank">Tebi</a> & Myself</em>
       </p>
     </div>
     <div class="about-photo">
