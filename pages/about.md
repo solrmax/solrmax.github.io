@@ -89,27 +89,27 @@ permalink: /about
   <div class="about-layout">
     <div class="about-text">
       <p>
-        I’m Esteban Gaete Flores, a senior Unity game developer with 10+ years of experience
-        building games and tools for console, PC, and mobile. I specialize in
-        gameplay programming, performance optimization, and editor tooling that
-        help teams ship smoother, more responsive experiences.
+        I'm Maxime Solaire, a senior Unity developer and technical producer with 10+ years
+        of experience building games from scratch across PC, mobile, and multi-platform releases.
+        I wear many hats—technical development (shaders, tools, optimization, CI/CD), team and
+        production management, and cross-discipline coordination—keeping projects moving while
+        maintaining the creative vision.
       </p>
       <p>
-        I’ve contributed to commercial projects like <em>Garden Joy</em>,
-        <em>The Eightfold Path</em>, <em>Linked Mask</em>, <em>What Lies in the
-        Multiverse</em>, and <em>NBA Clash</em>, often joining teams in the messy
-        middle to improve performance, streamline pipelines, and keep features
-        moving. I enjoy translating design goals into robust systems, connecting
-        backend data to UI, and building tools that reduce repetitive work for the
-        rest of the team.
+        I co-founded Studio Black Flag and spent 8 years leading development on <em>Orphan Age</em>,
+        a cyberpunk life-sim where I handled everything from systems architecture and build pipelines
+        to partner negotiations and team mentoring. I've also worked on projects like <em>Yrminsul</em>
+        (multi-platform deployment and Steam integration) and <em>Click of Cthulhu</em> (complete
+        refactor from visual scripting to C#). I thrive in the messy middle—streamlining workflows,
+        building tools that cut down repetitive tasks, and making sure design and art teams have what
+        they need to do their best work.
       </p>
       <p>
-        Outside of studio work, I co-organize GameDev Planet, the largest Chilean
-        game dev community, where we’ve hosted dozens of events, talks, and
-        showcases to help local developers connect and grow. I’m especially
-        passionate about platformers, metroidvanias, and gameplay-driven projects,
-        and I’m happiest when I’m iterating on feel, helping teammates be more
-        effective, and supporting strong, collaborative teams.
+        I'm a big believer in collaborative, equitable teams where knowledge flows freely and everyone
+        has a voice. Whether I'm debugging a shader, setting up CI/CD, or negotiating contracts, I care
+        deeply about fair treatment, sustainable workflows, and building games without burning people out.
+        I'm happiest when I'm solving complex problems while helping teams work together toward something
+        meaningful.
       </p>
       <p>
         If you’re interested in my work and would like to hire me, explore a collaboration,
