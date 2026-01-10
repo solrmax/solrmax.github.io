@@ -89,27 +89,13 @@ permalink: /about
   <div class="about-layout">
     <div class="about-text">
       <p>
-        I'm Maxime Solaire, a senior Unity developer and technical producer with 10+ years
-        of experience building games from scratch across PC, mobile, and multi-platform releases.
-        I wear many hats—technical development (shaders, tools, optimization, CI/CD), team and
-        production management, and cross-discipline coordination—keeping projects moving while
-        maintaining the creative vision.
+I've been making games with Unity for about 10 years now. I started as a solo dev, shipped a small mobile game, then joined what was essentially a two-person studio. Over the years, I helped build it into a proper team — writing core systems, setting up infrastructure, and learning the craft through iteration and a lot of trial and error. I've shipped four games, and each one taught me something different about what it actually takes to get a project across the finish line.
       </p>
       <p>
-        I co-founded Studio Black Flag and spent 8 years leading development on <em>Orphan Age</em>,
-        a cyberpunk life-sim where I handled everything from systems architecture and build pipelines
-        to partner negotiations and team mentoring. I've also worked on projects like <em>Yrminsul</em>
-        (multi-platform deployment and Steam integration) and <em>Click of Cthulhu</em> (complete
-        refactor from visual scripting to C#). I thrive in the messy middle—streamlining workflows,
-        building tools that cut down repetitive tasks, and making sure design and art teams have what
-        they need to do their best work.
+Along the way, I also got involved in the business side — pitching to publishers, negotiating contracts, and eventually taking on production responsibilities. Our studio was a worker cooperative (SCOP), which meant decisions were made collectively and everyone had a voice in how we worked. That experience shaped how I think about teams: I believe the best work happens when people feel ownership over what they're building, not just executing tasks handed down from above.
       </p>
       <p>
-        I'm a big believer in collaborative, equitable teams where knowledge flows freely and everyone
-        has a voice. Whether I'm debugging a shader, setting up CI/CD, or negotiating contracts, I care
-        deeply about fair treatment, sustainable workflows, and building games without burning people out.
-        I'm happiest when I'm solving complex problems while helping teams work together toward something
-        meaningful.
+  I'm now looking for a place where I can stay hands-on technically while contributing to the bigger picture. I enjoy mentoring, I care about clean architecture, and I value teams where collaboration isn't just a buzzword. I want to work with people who respect each other's expertise and build things together.
       </p>
       <p>
         If you’re interested in my work and would like to hire me, explore a collaboration,
