@@ -88,19 +88,16 @@ permalink: /about
 
   <div class="about-layout">
     <div class="about-text">
-      <p>
-I've been making games with Unity for about 10 years now. I started as a solo dev, shipped a small mobile game, then joined what was essentially a two-person studio. Over the years, I helped build it into a proper team — writing core systems, setting up infrastructure, and learning the craft through iteration and a lot of trial and error. I've shipped four games, and each one taught me something different about what it actually takes to get a project across the finish line.
-      </p>
-      <p>
-Along the way, I also got involved in the business side — pitching to publishers, negotiating contracts, and eventually taking on production responsibilities. Our studio was a worker cooperative (SCOP), which meant decisions were made collectively and everyone had a voice in how we worked. That experience shaped how I think about teams: I believe the best work happens when people feel ownership over what they're building, not just executing tasks handed down from above.
-      </p>
-      <p>
-  I'm now looking for a place where I can stay hands-on technically while contributing to the bigger picture. I enjoy mentoring, I care about clean architecture, and I value teams where collaboration isn't just a buzzword. I want to work with people who respect each other's expertise and build things together.
-      </p>
-      <p>
-        If you’re interested in my work and would like to hire me, explore a collaboration,
-        discuss consulting, or just nerd out about Unity and game dev, feel free to reach out.
-      </p>
+        <p>
+          After <strong>10 years working with Unity</strong>, I can honestly say the spark is still there.<br/> 
+          My journey started by <strong>shipping a mobile game solo</strong>, followed by <strong>eight years at an indie studio</strong> where I became the technical backbone. I handled the full spectrum of development: <strong>Core gameplay architecture, custom editor tools, shaders, and CI/CD pipelines</strong>.
+        </p>
+        <p>
+          I love the craft of engineering, finding elegant solutions to complex problems, but what drives me most is the <strong>impact on the team</strong>. Whether it's <strong>optimizing a rendering pipeline</strong> or building a tool that makes an artist's eyes light up, I find satisfaction in seeing my code empower others and run in a live game.
+        </p>
+        <p>
+          I thrive in environments that value <strong>knowledge sharing and mentorship</strong>. I’m looking for that specific energy: a place with <strong>high code standards</strong>, a collaborative culture, and a project we can all be proud of.
+        </p>
       <div class="closing-links">
         <a href="/resume">Resume</a>
         {% assign linkedin = site.socials | where: "name", "linkedin" | first %}
