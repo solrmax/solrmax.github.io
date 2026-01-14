@@ -13,3 +13,26 @@
     </p>
   </div>
 </footer>
+
+<div id="idle-bar" class="idle-bar" aria-live="polite">
+  <span class="idle-bar__stat">Signal <strong id="idle-signal">0</strong></span>
+  <span class="idle-bar__stat">/s <strong id="idle-rate">0</strong></span>
+  <span class="idle-bar__stat">Click <strong id="idle-click-power">1</strong></span>
+  <span class="idle-bar__stat">CPS <strong id="idle-cps">0.0</strong></span>
+  <button id="idle-click" class="idle-bar__btn" type="button">Scan</button>
+  <button id="idle-upgrade-scanner" class="idle-bar__btn" type="button">
+    Auto Drones <span class="idle-bar__cost">(<span id="idle-upgrade-scanner-cost">12</span>)</span>
+  </button>
+  <button id="idle-upgrade-amplifier" class="idle-bar__btn" type="button">
+    Click Boost <span class="idle-bar__cost">(<span id="idle-upgrade-amplifier-cost">20</span>)</span>
+  </button>
+  <span id="idle-status" class="idle-bar__status">Crew inbound.</span>
+  <div id="idle-characters" class="idle-bar__characters" aria-hidden="true"></div>
+  <div class="idle-bar__progress" aria-hidden="true">
+    <span id="idle-progress-fill" class="idle-bar__progress-fill"></span>
+  </div>
+</div>
+<div id="idle-victory" class="idle-victory" role="status" aria-live="polite" hidden>
+  <span>Congrats — you’re clearly interested ✅ <a href="mailto:maxarobaze@gmail.com">maxarobaze@gmail.com</a></span>
+  <button id="idle-continue" class="idle-victory__btn" type="button">Keep playing</button>
+</div>

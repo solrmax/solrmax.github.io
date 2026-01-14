@@ -1,0 +1,232 @@
+body {
+  padding-bottom: 0;
+}
+
+.idle-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: var(--black-alpha-70);
+  border-top: 1px solid var(--green-alpha-35);
+  color: var(--text-light);
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  z-index: 999;
+  height: 52px;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.idle-victory[hidden] {
+  display: none !important;
+}
+
+.idle-bar strong {
+  color: var(--green);
+}
+
+.idle-bar__stat {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.idle-bar__stat strong {
+  display: inline-block;
+  min-width: 0;
+  text-align: right;
+}
+
+.idle-bar__stat + .idle-bar__stat {
+  padding-left: 6px;
+  margin-left: 6px;
+  border-left: 1px solid var(--green-alpha-12);
+}
+
+.idle-bar__btn {
+  background: var(--black-alpha-40);
+  border: 1px solid var(--green-alpha-45);
+  color: inherit;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  min-width: 92px;
+  text-align: center;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.idle-bar__btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 6px var(--green-alpha-25);
+}
+
+.idle-bar__btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.idle-bar__cost {
+  color: var(--green);
+}
+
+.idle-bar__status {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.idle-bar__characters {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.idle-bar__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--green-alpha-05);
+  pointer-events: none;
+}
+
+.idle-bar__progress-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--green);
+  opacity: 0.55;
+  transition: width 0.3s ease;
+}
+
+.idle-victory {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: rgba(6, 16, 6, 0.96);
+  border-top: 1px solid var(--green);
+  color: var(--text-light);
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  text-align: center;
+  z-index: 1001;
+}
+
+.idle-victory a {
+  color: var(--green);
+}
+
+.idle-victory__btn {
+  background: var(--black-alpha-40);
+  border: 1px solid var(--green-alpha-45);
+  color: inherit;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.idle-bar__character {
+  width: 8px;
+  height: 12px;
+  border: 1px solid var(--green);
+  border-radius: 2px;
+  position: relative;
+  animation: idle-bar-bob 1.4s ease-in-out infinite;
+  box-shadow: 0 0 6px var(--green-alpha-35);
+}
+
+.idle-bar__character::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: -4px;
+  left: 1px;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green-alpha-45);
+}
+
+.idle-bar__character:nth-child(odd) {
+  animation-delay: -0.4s;
+}
+
+.idle-confetti {
+  position: fixed;
+  bottom: 0;
+  width: 8px;
+  height: 12px;
+  border-radius: 2px;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green-alpha-35);
+  animation: idle-confetti-fall 1.4s ease-out forwards;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.idle-confetti:nth-child(odd) {
+  animation-duration: 1.6s;
+}
+
+@keyframes idle-bar-bob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes idle-confetti-fall {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  35% {
+    transform: translate(var(--confetti-x, 0px), -120px) rotate(140deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(var(--confetti-x, 0px) * 1.2), 120vh) rotate(260deg);
+    opacity: 0;
+  }
+}
+
+.scroll-top-wrapper.floating {
+  bottom: 70px;
+}
+
+@media (max-width: 880px) {
+  .idle-bar__characters {
+    display: none;
+  }
+
+  .idle-victory {
+    bottom: 0;
+  }
+
+  .scroll-top-wrapper.floating {
+    bottom: 110px;
+  }
+}
