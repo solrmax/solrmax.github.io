@@ -1,3 +1,16 @@
+- title: A Screen in the Crowd
+  project_description: >
+    _
+  description: >
+    A 2D rhythm game where you play a killer who must blend into a crowd of robotic dancers by mimicking their movements in rhythm and cadence. Build charge to unleash dashes and eliminate targets.
+  image: assets/images/p_ascreeninthecrowd.png
+  url: https://layar.itch.io/a-screen-in-the-crowd
+  release: GGJ - Feb 2026
+  tags: [2D, rhythm, narrative]
+  platforms:
+    - id: itchio
+      url: https://layar.itch.io/a-screen-in-the-crowd
+
 - title: Hoodie Hitchhike
   project_description: >
     _

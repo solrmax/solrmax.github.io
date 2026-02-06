@@ -136,10 +136,11 @@
 .project-text {
   flex: 1;
   align-self: flex-start;
+  text-align: left;
 }
 
 .project-text p {
-  text-align: justify;
+  text-align: left;
 }
 
 .project-game-description {
@@ -151,10 +152,12 @@
   color: var(--text-muted);
   opacity: 0.9;
   font-style: italic;
+  text-align: left;
 }
 
 .project-description {
   margin-bottom: 12px;
+  text-align: left;
 }
 
 
@@ -193,7 +196,7 @@
 
   .project-text {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .project-inner,
@@ -436,13 +439,13 @@
 
 .smaller-project-card .project-game-description {
   margin-bottom: 12px;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
 
 .smaller-project-card .project-description {
-  text-align: justify;
+  text-align: left;
 }
 
 /* --------------------------------------------- */
@@ -579,4 +582,3 @@
     padding: 0 16px;
   }
 }
-
