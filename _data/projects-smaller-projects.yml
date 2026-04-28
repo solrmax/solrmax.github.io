@@ -1,3 +1,16 @@
+- title: Remote Hero Support
+  project_description: >
+    _
+  description: >
+    A fast-paced, chaotic micro-game where you support a remote-working superhero from their apartment. Run between hotspots to solve rapid-fire mini-games, fix problems, and handle distractions while the hero saves the world.
+  image: assets/images/p_rhs.gif
+  url: https://layar.itch.io/rhs
+  release: Spring Jam - Apr 2026
+  tags: [2D, pixel art, arcade]
+  platforms:
+    - id: itchio
+      url: https://layar.itch.io/rhs
+
 - title: A Screen in the Crowd
   project_description: >
     _
